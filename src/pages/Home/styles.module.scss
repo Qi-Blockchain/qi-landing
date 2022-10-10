@@ -1,9 +1,15 @@
 @import "./src/assets/styles/mixin/breakpoints";
 
 .wrapper {
-  background: url("../../assets/images/bg-start-screen.png");
-  background-repeat: no-repeat;
+  background: url("../../assets/images/bg-new.png");
+  background-repeat: repeat-y;
+  background-size: contain;
   overflow-x: hidden;
+
+
+  @include  tablet {
+    background-size: auto;
+  }
 
   @include mobile {
     background-position: top 70px right -210px;
