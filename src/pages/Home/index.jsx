@@ -27,21 +27,25 @@ const Home = () => {
 
     return (
         <>
-            <div className={classes.startScreenWrapper}>
-                <HeaderPage/>
-                <StartScreen/>
+            <div className={classes.testOne}>
+                <div className={classes.startScreenWrapper}>
+                    <HeaderPage/>
+                    <StartScreen/>
+                </div>
+                <LiveChartSection/>
+                <div className={classes.floatingSectionWrapper}>
+                    <FloatingSection/>
+                </div>
+                <TableSection/>
+                <div className={classes.compareSectionWrapper}>
+                    <CompareSection/>
+                </div>
+                <BlockChainSection/>
             </div>
-            <LiveChartSection/>
-            <div className={classes.floatingSectionWrapper}>
-                <FloatingSection/>
-            </div>
-            <TableSection/>
-            <div className={classes.compareSectionWrapper}>
-                <CompareSection/>
-            </div>
-            <BlockChainSection/>
-            <div className={classes.sliderSectionWrapper}>
-                <SliderSection/>
+            <div className={classes.testTwo}>
+                <div className={classes.sliderSectionWrapper}>
+                    <SliderSection/>
+                </div>
             </div>
             <FooterPage/>
         </>

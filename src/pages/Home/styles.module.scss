@@ -2,32 +2,32 @@
 
 .startScreenWrapper {
   height: 959px;
-  background: url("../../assets/images/bg-start-screen.png");
-  background-size: 100% 170%;
+  //background: url("../../assets/images/bg-start-screen.png");
+  //background-size: 100% 170%;
   overflow-x: hidden;
-
-
-  @include  tablet {
-    background-size: auto;
-  }
+  //
+  //
+  //@include  tablet {
+  //  background-size: auto;
+  //}
 }
 
 .floatingSectionWrapper {
-  background: url("../../assets/images/floating-objects-bg.png");
-  background-size: 100% 170%;
+  //background: url("../../assets/images/floating-objects-bg.png");
+  //background-size: 100% 170%;
   overflow-x: hidden;
-
-  @include  tablet {
-    background-size: auto;
-  }
+  //
+  //@include  tablet {
+  //  background-size: auto;
+  //}
 }
 
 .compareSectionWrapper {
   height: 1237px;
-  background: url("../../assets/images/compare-section-bg.png");
-  background-repeat: repeat-x;
-  background-size: auto;
-  overflow-x: hidden;
+  //background: url("../../assets/images/compare-section-bg.png");
+  //background-repeat: repeat-x;
+  //background-size: auto;
+  //overflow-x: hidden;
 
 
   //@include  tablet {
@@ -41,21 +41,33 @@
 
 .sliderSectionWrapper {
   height: 487px;
-  background: url("../../assets/images/news-block-bg.png");
-  background-repeat: repeat-x;
-  background-size: auto;
-  overflow-x: hidden;
-
-
-  @include  tablet {
-    background-size: auto;
-  }
-
-  @include mobile {
-    background-position: top 70px right -210px;
-  }
+  //background: url("../../assets/images/news-block-bg.png");
+  //background-repeat: repeat-x;
+  //background-size: auto;
+  //overflow-x: hidden;
+  //
+  //
+  //@include  tablet {
+  //  background-size: auto;
+  //}
+  //
+  //@include mobile {
+  //  background-position: top 70px right -210px;
+  //}
 }
 
 .disableOverflow {
   overflow: hidden;
+}
+
+.testOne {
+  background: url("../../assets/images/web.png");
+  background-size: cover;
+}
+
+.testTwo {
+  background: url("../../assets/images/footer_web.png");
+  background-size: cover;
+  background-position: top;
+  padding-top: 20px;
 }

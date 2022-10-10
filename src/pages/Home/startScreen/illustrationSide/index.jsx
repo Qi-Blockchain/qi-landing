@@ -7,7 +7,7 @@ const IllustrationSide = () => {
     return (
         <div className={classes.wrapper}>
             <FloatingText/>
-            <FloatingObjects/>
+            {/*<FloatingObjects/>*/}
         </div>
     );
 };

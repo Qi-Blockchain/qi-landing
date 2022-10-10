@@ -36,7 +36,7 @@ const LiveChartSection = () => {
                     &nbsp;
                     <a className={classes.link} href={'#'}>
                         bitmart
-                    </a>
+                    </a>,
                     &nbsp;
                     <a className={classes.link} href={'https://www.xt.com/trade/qie_usdt'} target={'_blank'}>
                         xt.com
