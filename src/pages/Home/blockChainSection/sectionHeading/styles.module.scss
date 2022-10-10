@@ -1,0 +1,23 @@
+@import './src/assets/styles/variables/colors';
+@import './src/assets/styles/mixin/breakpoints';
+
+.heading {
+  font-weight: 800;
+  font-size: 32px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: $white;
+
+  @include tablet {
+    font-size: 20px;
+  }
+}
+
+.highlight {
+  font-size: 32px;
+  color: $pink;
+
+  @include tablet {
+    font-size: 20px;
+  }
+}

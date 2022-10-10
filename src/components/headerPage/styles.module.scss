@@ -1,0 +1,24 @@
+@import "./src/assets/styles/mixin/breakpoints";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+  padding: 24px 0;
+
+  @include tablet {
+    padding: 0;
+    padding-top: 15px;
+  }
+}
+
+.container {
+  width: 100%;
+
+  &:nth-child(2),
+  &:nth-child(3) {
+    @include tablet {
+      display: none;
+    }
+  }
+}

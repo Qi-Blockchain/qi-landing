@@ -1,0 +1,30 @@
+@import "./src/assets/styles/variables/colors";
+
+.wrapper {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  right: -15px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  background: $black-bg;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 0 15px;
+
+  & p:last-child {
+    padding-bottom: 32px;
+  }
+}

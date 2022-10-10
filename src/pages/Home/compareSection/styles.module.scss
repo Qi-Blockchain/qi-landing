@@ -1,0 +1,34 @@
+@import "./src/assets/styles/variables/colors";
+@import "./src/assets/styles/mixin/breakpoints";
+
+.wrapper {
+  margin-top: 185px;
+  padding: 64px;
+  background: $black-chart-bg;
+  border: 1px solid $black-15;
+  border-radius: 32px;
+
+  @include tablet {
+    padding: 0 15px;
+    background: none;
+    border: none;
+  }
+}
+
+.wrapperText {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 637px;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: -0.015em;
+  color: $white-80;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}

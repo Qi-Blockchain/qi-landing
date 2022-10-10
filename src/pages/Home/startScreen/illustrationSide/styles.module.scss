@@ -1,0 +1,9 @@
+@import "./src/assets/styles/mixin/breakpoints";
+
+.wrapper {
+  position: relative;
+
+  @include screen_1293 {
+    width: 100%;
+  }
+}

@@ -1,0 +1,37 @@
+@import './src/assets/styles/variables/colors';
+@import './src/assets/styles/mixin/breakpoints';
+
+.wrapper {
+  display: flex;
+  gap: 40px;
+  height: 193px;
+  max-width: 726px;
+
+  canvas {
+    max-width: 674px;
+    width: 100% !important;
+    max-height: 173px;
+
+    @include screen_1293 {
+      max-width: 450px;
+    }
+
+    @include tablet {
+      max-width: unset;
+      width: 200px !important;
+    }
+  }
+}
+
+.legendWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.legendItem {
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: -0.015em;
+  color: $white-50;
+}

@@ -1,0 +1,24 @@
+@import "./src/assets/styles/variables/colors";
+@import "./src/assets/styles/mixin/breakpoints";
+
+.text {
+  margin-top: 16px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.015em;
+  color: $white-80;
+
+  @include screen_1293 {
+    font-size: 20px;
+  }
+
+  @include tablet {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  @include mobile {
+    text-align: left;
+  }
+}

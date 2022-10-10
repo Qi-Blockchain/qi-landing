@@ -1,0 +1,16 @@
+@import './src/assets/styles/mixin/breakpoints';
+
+.wrapper {
+  margin-top: 335px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include tablet {
+    margin-top: 95px;
+    padding: 0 15px 0 0;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 77px;
+  }
+}

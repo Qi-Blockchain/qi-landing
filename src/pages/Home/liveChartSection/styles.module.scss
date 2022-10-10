@@ -1,0 +1,84 @@
+@import './src/assets/styles/variables/colors';
+@import './src/assets/styles/mixin/breakpoints';
+
+.wrapper {
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 198px;
+  padding: 64px;
+  display: flex;
+  background: $black-chart-bg;
+  border: 1px solid $black-15;
+  border-radius: 32px;
+
+  @include tablet {
+    padding: 24px;
+    margin: 0 15px;
+    margin-top: 100px;
+  }
+}
+
+.blockWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: $white-50;
+
+  @include tablet {
+    margin-bottom: 24px;
+    font-size: 12px;
+  }
+}
+
+.btnWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include tablet {
+    align-items: center;
+  }
+}
+
+.chartBlockWrapper {
+  padding: 32px;
+
+  @include tablet {
+    padding: 0;
+  }
+}
+
+.bodyWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.footerWrapper {
+  border-top: 1px solid $white-10;
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: $white-50;
+
+  @include tablet {
+    font-size: 12px;
+  }
+}
+
+.link {
+  display: block;
+  color: $pink;
+}

@@ -1,0 +1,26 @@
+@import './src/assets/styles/mixin/breakpoints';
+
+.wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.logoText {
+  @include tablet {
+    display: none;
+  }
+}
+
+.logoIcon {
+  svg {
+    height: 64px;
+  }
+  @include tablet {
+    svg {
+      height: 55px;
+    }
+  }
+}

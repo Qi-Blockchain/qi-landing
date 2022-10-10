@@ -1,0 +1,15 @@
+@import "./src/assets/styles/mixin/breakpoints";
+
+.wrapper {
+  background: url("../../assets/images/bg-start-screen.png");
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+  @include mobile {
+    background-position: top 70px right -210px;
+  }
+}
+
+.disableOverflow {
+  overflow: hidden;
+}

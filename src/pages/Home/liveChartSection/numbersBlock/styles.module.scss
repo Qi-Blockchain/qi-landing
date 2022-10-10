@@ -1,0 +1,84 @@
+@import "./src/assets/styles/variables/colors";
+@import "./src/assets/styles/mixin/breakpoints";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @include tablet {
+    flex-direction: row;
+    gap: unset;
+    justify-content: space-between;
+  }
+}
+
+.headingWrapper {
+  display: flex;
+  gap: 16px;
+
+  @include tablet {
+    gap: 8px;
+  }
+}
+
+.logoWrapper svg {
+  width: 44px;
+
+  @include tablet {
+    width: 32px;
+  }
+}
+
+.text {
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: -0.015em;
+  color: $white;
+
+  @include tablet {
+    font-size: 14px;
+  }
+}
+
+.subtext {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: $white-50;
+
+  @include tablet {
+    font-size: 12px;
+  }
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 32px;
+  letter-spacing: -0.015em;
+  color: $white;
+
+  @include tablet {
+    font-size: 24px;
+  }
+}
+
+.label {
+  padding: 4px 6px;
+  background: $green;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: $white;
+
+  @include tablet {
+    font-size: 12px;
+  }
+}

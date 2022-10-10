@@ -1,0 +1,16 @@
+@import "./src/assets/styles/variables/colors";
+
+.wrapper {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: -0.015em;
+  color: $white-70;
+}

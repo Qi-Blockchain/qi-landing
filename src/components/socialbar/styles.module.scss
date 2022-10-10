@@ -1,0 +1,11 @@
+@import "./src/assets/styles/mixin/breakpoints";
+
+.wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+
+  @include tablet {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,8 @@
+@import "../../assets/styles/mixin/breakpoints";
+
+.wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 48px;
+}

@@ -1,0 +1,24 @@
+@import "./src/assets/styles/mixin/breakpoints";
+@import "./src/assets/styles/variables/colors";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 600px;
+
+  @include tablet {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.linkSvg svg {
+  height: 15px;
+
+  path {
+    fill: $white;
+  }
+}

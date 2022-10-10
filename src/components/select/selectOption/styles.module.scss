@@ -1,0 +1,30 @@
+@import './src/assets/styles/variables/colors';
+@import './src/assets/styles/mixin/breakpoints';
+
+.wrapper {
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.input {
+  position: absolute;
+  visibility: hidden;
+}
+
+
+.label {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: -0.015em;
+  color: $white-50;
+  padding: 0 8px;
+}
+
+.input:checked ~ .label {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}

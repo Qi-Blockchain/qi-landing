@@ -1,0 +1,9 @@
+@import "./src/assets/styles/variables/colors";
+@import "./src/assets/styles/mixin/breakpoints";
+
+.wrapper {
+  display: flex;
+  padding: 2px;
+  background: $white-5;
+  border-radius: 8px;
+}

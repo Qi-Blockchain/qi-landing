@@ -1,0 +1,23 @@
+@import './src/assets/styles/variables/colors';
+
+.value {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: -0.015em;
+  color: $white;
+  margin-bottom: 4px;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: $white-80;
+}
+
+.iconWrapper {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

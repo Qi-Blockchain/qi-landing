@@ -1,0 +1,49 @@
+@import './src/assets/styles/variables/colors';
+@import './src/assets/styles/mixin/breakpoints';
+
+.wrapper {
+  position: relative;
+}
+
+.sliderWrapper {
+  padding: 0 96px;
+
+  @include screen_1293 {
+    padding: 0;
+  }
+}
+
+.btnWrapper {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+
+  @include screen_1293 {
+    display: none;
+  }
+}
+
+.button {
+  width: 56px;
+  height: 56px;
+  background: $white-5;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:first-child {
+    left: 0
+  }
+
+  &:last-child {
+    right: 0
+  }
+}
+
+.link {
+  display: block;
+  height: 100%;
+}

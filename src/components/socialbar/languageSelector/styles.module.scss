@@ -1,0 +1,13 @@
+@import './src/assets/styles/variables/colors';
+
+.wrapper {
+  position: relative;
+  z-index: 0;
+  left: -25px;
+  height: 25px;
+  display: flex;
+  gap: 4px;
+  padding: 0 8px 0 32px;
+  background: $white-10;
+  border-radius: 100px;
+}

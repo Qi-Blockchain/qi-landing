@@ -1,0 +1,117 @@
+@import "./src/assets/styles/variables/colors";
+@import "./src/assets/styles/mixin/breakpoints";
+
+.wrapper {
+  padding: 64px;
+
+  @include tablet {
+    padding: 64px 15px;
+  }
+}
+
+.columnHead {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: $white-80;
+}
+
+.columnHeadWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 120px;
+}
+
+.rowHead {
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: -0.015em;
+  color: $white-50;
+  padding: 0 15px;
+}
+
+.textRed {
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: -0.015em;
+  color: $red;
+}
+
+.textGreen {
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: -0.015em;
+  color: $green;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: -0.015em;
+  color: $white;
+}
+
+.table {
+  border-spacing: 0 24px;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.column {
+  width: 120px;
+}
+
+.value {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: -0.015em;
+  color: $white;
+}
+
+.tableWrapper {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.tableFirstColumn {
+  display: inline-block;
+  vertical-align: top;
+  border-spacing: 0 24px;
+  background: #100F0F;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 30px 0 30px rgba(0,0,0,0.5), 1px 0 0 rgba(255,255,255,0.13);
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+
+}
+
+.tableFirstColumn td,
+.tableFirstColumn th {
+  width: 120px;
+}
+
+.tableFirstColumn th,
+.tableContentWrapper th {
+  height: 29px;
+}
+
+.tableFirstColumn td,
+.tableContentWrapper td {
+  height: 20px;
+}
+
+.tableContentWrapper {
+  display: inline-block;
+  overflow-x: scroll;
+  vertical-align: top;
+  max-width: calc(100% - 120px);
+}
+
+.tableContentWrapper>table {
+  display: inline-block;
+  vertical-align: top;
+}
+

@@ -1,0 +1,14 @@
+@import "./src/assets/styles/variables/colors";
+@import "./src/assets/styles/mixin/breakpoints";
+
+.text {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: $white-50;
+
+  @include tablet {
+    font-size: 12px;
+    text-align: center;
+  }
+}

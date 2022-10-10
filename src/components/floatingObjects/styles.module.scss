@@ -1,0 +1,40 @@
+@import '../../assets/styles/mixin/breakpoints';
+
+.wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 170px;
+
+  @include screen_1635 {
+    left: 0;
+  }
+
+  @include screen_1293 {
+    left: unset;
+    right: 0;
+  }
+
+  @include tablet {
+    position: relative;
+    top: unset;
+    right: unset;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.image {
+  @include screen_1293 {
+    width: 400px;
+  }
+
+  @include tablet {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  @include mobile {
+    max-width: 100%;
+  }
+}

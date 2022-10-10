@@ -1,0 +1,56 @@
+@import "../../../../assets/styles/variables/colors";
+@import "../../../../assets/styles/mixin/breakpoints";
+
+.wrapper {
+  max-width: 459px;
+  padding: 32px;
+
+  @include tablet {
+    max-width: 305px;
+    padding: 24px;
+  }
+}
+
+.image {
+  border-radius: 16px;
+  margin-bottom: 32px;
+
+  @include tablet {
+    width: 252px;
+  }
+}
+
+.date {
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: -0.015em;
+  color: $white-50;
+
+  @include tablet {
+    font-size: 10px;
+  }
+}
+
+.heading {
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: $white;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+.text {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: $white-50;
+
+  @include tablet {
+    font-size: 14px;
+  }
+}

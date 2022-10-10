@@ -1,0 +1,21 @@
+@import "./src/assets/styles/mixin/breakpoints";
+
+.wrapper {
+  width: fit-content;
+  padding: 48px 106px 48px 64px;
+  background: linear-gradient(259.94deg, rgba(255, 255, 255, 0) -12.46%, rgba(255, 255, 255, 0.1) 114.52%);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  display: flex;
+  gap: 12px;
+
+  @include mobile {
+    padding: 24px;
+    width: unset;
+  }
+}

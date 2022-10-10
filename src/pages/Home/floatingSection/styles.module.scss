@@ -1,0 +1,50 @@
+@import "./src/assets/styles/mixin/breakpoints";
+
+.wrapper {
+  margin-top: 209px;
+  position: relative;
+  height: 465px;
+
+  & div:nth-child(1) {
+    position: absolute;
+    right: 275px;
+
+    @include tablet {
+      position: relative;
+      right: unset;
+    }
+  }
+
+  & div:nth-child(2) {
+    position: absolute;
+    left: 32px;
+    top: 214px;
+
+    @include tablet {
+      position: relative;
+      left: unset;
+      top: unset;
+    }
+  }
+
+  & div:nth-child(3) {
+    position: absolute;
+    right: 65px;
+    top: 294px;
+
+    @include tablet {
+      position: relative;
+      right: unset;
+      top: unset;
+    }
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 0 15px;
+    align-items: center;
+    height: unset;
+  }
+}

@@ -1,0 +1,38 @@
+@import "./src/assets/styles/variables/colors";
+@import "./src/assets/styles/mixin/breakpoints";
+
+.wrapper {
+  margin-top: 300px;
+  padding: 0 15px;
+  background: $black-bg;
+
+  @include tablet {
+    margin-top: 130px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1279px;
+  padding: 32px 0;
+  margin: 0 auto;
+
+  @include screen_1293 {
+    width: 100%;
+  }
+}
+
+.blockWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mobileWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
