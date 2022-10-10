@@ -7,7 +7,7 @@ import "@egjs/react-flicking/dist/flicking.css";
 const FeaturesMobile = () => {
     return (
         <div className={classes.wrapper}>
-            <Flicking moveType="freeScroll" bound={true}>
+            <Flicking moveType="freeScroll" gap={40} bound={true}>
                 <div>
                     <TextBlurBg text='Scalable and Developer Friendly'/>
                 </div>

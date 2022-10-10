@@ -26,19 +26,25 @@ const Home = () => {
     }, [burgerActive]);
 
     return (
-        <div className={classes.wrapper}>
-            <PageWrapper>
+        <>
+            <div className={classes.startScreenWrapper}>
                 <HeaderPage/>
                 <StartScreen/>
-                <LiveChartSection/>
+            </div>
+            <LiveChartSection/>
+            <div className={classes.floatingSectionWrapper}>
                 <FloatingSection/>
-                <TableSection/>
+            </div>
+            <TableSection/>
+            <div className={classes.compareSectionWrapper}>
                 <CompareSection/>
-                <BlockChainSection/>
+            </div>
+            <BlockChainSection/>
+            <div className={classes.sliderSectionWrapper}>
                 <SliderSection/>
-            </PageWrapper>
+            </div>
             <FooterPage/>
-        </div>
+        </>
     );
 };
 

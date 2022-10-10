@@ -10,22 +10,24 @@ const HeaderPage = () => {
     const screenWidth = useScreenWidth();
 
     return (
-        <header className={classes.wrapper}>
-            <div className={classes.container}>
-                <LogoHeader/>
-            </div>
-            <div className={classes.container}>
-                <Navbar/>
-            </div>
-            <div className={classes.container}>
-                <Socialbar/>
-            </div>
-            {screenWidth < 1025 ?
-                <BurgerMenu/>
-                :
-                <></>
-            }
-        </header>
+        <div className={classes.containerPage}>
+            <header className={classes.wrapper}>
+                <div className={classes.container}>
+                    <LogoHeader/>
+                </div>
+                <div className={classes.container}>
+                    <Navbar/>
+                </div>
+                <div className={classes.container}>
+                    <Socialbar/>
+                </div>
+                {screenWidth < 1025 ?
+                    <BurgerMenu/>
+                    :
+                    <></>
+                }
+            </header>
+        </div>
     );
 };
 

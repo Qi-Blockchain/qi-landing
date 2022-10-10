@@ -1,9 +1,14 @@
 @import "./src/assets/styles/mixin/breakpoints";
 
+.containerPage {
+  max-width: 1279px;
+  margin: 0 auto;
+}
+
 .wrapper {
   margin-top: 209px;
   position: relative;
-  height: 465px;
+  height: 1286px;
 
   & div:nth-child(1) {
     position: absolute;

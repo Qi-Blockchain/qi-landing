@@ -4,11 +4,13 @@ import FloatingObject from "./floatingObject";
 
 const FloatingSection = () => {
     return (
-        <section className={classes.wrapper}>
-            <FloatingObject text={'Qi Blockchain Explorer'}/>
-            <FloatingObject text={'Developer Resources'}/>
-            <FloatingObject text={'Qi Blockchain Testnet'}/>
-        </section>
+        <div className={classes.containerPage}>
+            <section className={classes.wrapper}>
+                <FloatingObject text={'Qi Blockchain Explorer'}/>
+                <FloatingObject text={'Developer Resources'}/>
+                <FloatingObject text={'Qi Blockchain Testnet'}/>
+            </section>
+        </div>
     );
 };
 

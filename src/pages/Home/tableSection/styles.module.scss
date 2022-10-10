@@ -1,7 +1,12 @@
 @import './src/assets/styles/mixin/breakpoints';
 
+.containerPage {
+  max-width: 1279px;
+  margin: 0 auto;
+}
+
 .wrapper {
-  margin-top: 335px;
+  margin-top: -615px;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -10,10 +10,10 @@ const ChartBlock = () => {
             <div className={classes.headingDesktop}>
                 <Heading/>
             </div>
-            <div className={classes.selectWrapper}>
-                <Select id={'market'} options={['Price', 'Market Cap', 'Candle Chart']}/>
-                <Select id={'time'} options={['1D', '7D', '1M', '3M', '1Y']}/>
-            </div>
+            {/*<div className={classes.selectWrapper}>*/}
+            {/*    <Select id={'market'} options={['Price', 'Market Cap', 'Candle Chart']}/>*/}
+            {/*    <Select id={'time'} options={['1D', '7D', '1M', '3M', '1Y']}/>*/}
+            {/*</div>*/}
             <Chart/>
             <div className={classes.headingMobile}>
                 <Heading/>

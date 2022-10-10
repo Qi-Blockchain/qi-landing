@@ -8,14 +8,16 @@ import SliderBlockMobile from "./sliderBlockMobile";
 const SliderSection = () => {
     const screen = useScreenWidth()
     return (
-        <section className={classes.wrapper}>
-            <TabSelect/>
-            {screen > 1025 ?
-                <SliderBlock/>
-                :
-                <SliderBlockMobile/>
-            }
-        </section>
+        <div className={classes.containerPage}>
+            <section className={classes.wrapper}>
+                <TabSelect/>
+                {screen > 1025 ?
+                    <SliderBlock/>
+                    :
+                    <SliderBlockMobile/>
+                }
+            </section>
+        </div>
     );
 };
 

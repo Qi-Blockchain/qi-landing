@@ -1,8 +1,13 @@
 @import "./src/assets/styles/variables/colors";
 @import "./src/assets/styles/mixin/breakpoints";
 
+.containerPage {
+  max-width: 1279px;
+  margin: 0 auto;
+}
+
 .wrapper {
-  margin-top: 185px;
+  margin-top: 160px;
   padding: 64px;
   background: $black-chart-bg;
   border: 1px solid $black-15;

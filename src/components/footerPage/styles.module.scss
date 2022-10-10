@@ -2,13 +2,8 @@
 @import "./src/assets/styles/mixin/breakpoints";
 
 .wrapper {
-  margin-top: 300px;
   padding: 0 15px;
   background: $black-bg;
-
-  @include tablet {
-    margin-top: 130px;
-  }
 }
 
 .container {

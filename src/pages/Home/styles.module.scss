@@ -1,9 +1,60 @@
 @import "./src/assets/styles/mixin/breakpoints";
 
-.wrapper {
-  background: url("../../assets/images/bg-new.png");
-  background-repeat: repeat-y;
-  background-size: contain;
+.startScreenWrapper {
+  height: 959px;
+  background: url("../../assets/images/bg-start-screen.png");
+  background-repeat: repeat-x;
+  background-size: auto;
+  overflow-x: hidden;
+
+
+  @include  tablet {
+    background-size: auto;
+  }
+
+  @include mobile {
+    background-position: top 70px right -210px;
+  }
+}
+
+.floatingSectionWrapper {
+  background: url("../../assets/images/floating-objects-bg.png");
+  background-repeat: repeat-x;
+  background-size: auto;
+  overflow-x: hidden;
+
+
+  @include  tablet {
+    background-size: auto;
+  }
+
+  @include mobile {
+    background-position: top 70px right -210px;
+  }
+}
+
+.compareSectionWrapper {
+  height: 1237px;
+  background: url("../../assets/images/compare-section-bg.png");
+  background-repeat: repeat-x;
+  background-size: auto;
+  overflow-x: hidden;
+
+
+  @include  tablet {
+    background-size: auto;
+  }
+
+  @include mobile {
+    background-position: top 70px right -210px;
+  }
+}
+
+.sliderSectionWrapper {
+  height: 487px;
+  background: url("../../assets/images/news-block-bg.png");
+  background-repeat: repeat-x;
+  background-size: auto;
   overflow-x: hidden;
 
 

@@ -9,14 +9,16 @@ const TableSection = () => {
     const screen = useScreenWIdth();
 
     return (
-        <section className={classes.wrapper}>
-            <TextBlock/>
-            {screen > 500 ?
-                <TableBlock/>
-                :
-                <TableBlockMobile/>
-            }
-        </section>
+        <div className={classes.containerPage}>
+            <section className={classes.wrapper}>
+                <TextBlock/>
+                {screen > 500 ?
+                    <TableBlock/>
+                    :
+                    <TableBlockMobile/>
+                }
+            </section>
+        </div>
     );
 };
 
