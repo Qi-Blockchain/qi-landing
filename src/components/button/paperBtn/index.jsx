@@ -2,11 +2,13 @@ import React from 'react';
 import classes from './styles.module.scss';
 import {ReactComponent as FileIcon} from "../../../assets/images/file-cloud-icon.svg";
 
-const PaperBtn = () => {
+const PaperBtn = ({link}) => {
     return (
         <button className={classes.button}>
-            White Paper
-            <FileIcon/>
+            <a href={link} target={'_blank'}>
+                White Paper
+                <FileIcon/>
+            </a>
         </button>
     );
 };

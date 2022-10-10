@@ -2,14 +2,17 @@
 @import "./src/assets/styles/mixin/breakpoints";
 
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
   font-size: 24px;
   letter-spacing: -0.015em;
   color: $white;
   background: transparent;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
 
   @include tablet {
     font-size: 18px;

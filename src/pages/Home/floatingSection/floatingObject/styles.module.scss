@@ -11,8 +11,13 @@
   letter-spacing: -0.015em;
   text-transform: capitalize;
   color: #FFFFFF;
-  display: flex;
-  gap: 12px;
+
+
+  a {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
 
   @include mobile {
     padding: 24px;

@@ -21,8 +21,8 @@ const TextSide = () => {
             <ScreenHeading/>
             <ScreenDescription/>
             <ButtonWrapper>
-                <ExplainerBtn/>
-                <PaperBtn/>
+                <ExplainerBtn link={'https://www.youtube.com/watch?v=1x4-YS-PzYA'}/>
+                <PaperBtn link={'https://qiblockchain.online/images/QI_Blockchain_Whitepaper_V2.pdf'}/>
             </ButtonWrapper>
             {screenWidth < 1025?
                 <FeaturesMobile/>

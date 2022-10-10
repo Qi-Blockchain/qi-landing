@@ -14,8 +14,8 @@ const LiveChartSection = () => {
                         <SectionHeading/>
                         <NumbersBlock/>
                         <div className={classes.btnWrapper}>
-                            <BuyBtn/>
-                            <div className={classes.text}>Available on XT, bitmart  digifinex and 55 more</div>
+                            <BuyBtn link={'https://www.xt.com/trade/qie_usdt'}/>
+                            {/*<div className={classes.text}>Available on XT, bitmart  digifinex and 55 more</div>*/}
                         </div>
                     </div>
                     <div className={classes.chartBlockWrapper}>
@@ -38,7 +38,7 @@ const LiveChartSection = () => {
                         bitmart
                     </a>
                     &nbsp;
-                    <a className={classes.link} href={'#'}>
+                    <a className={classes.link} href={'https://www.xt.com/trade/qie_usdt'} target={'_blank'}>
                         xt.com
                     </a>
                 </div>

@@ -14,10 +14,10 @@ const TextBlock = () => {
             <p className={classes.text}>Qi blockchain with QIE cryptocurrency is designed for Finance categorised with low transaction fees and realtime execution</p>
             {screen > 500 ?
                 <div className={classes.btnWrapper}>
-                    <ExplainerBtn/>
+                    <ExplainerBtn link={'https://www.youtube.com/watch?v=1x4-YS-PzYA'}/>
                 </div>
             :
-                <ExplainerBtn/>
+                <ExplainerBtn link={'https://www.youtube.com/watch?v=1x4-YS-PzYA'}/>
             }
 
 

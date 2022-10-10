@@ -9,21 +9,24 @@ const LanguageSelector = () => {
     const langOptions = [
         {
             value: 'us',
-            icon: <USFlag/>
+            icon: <USFlag/>,
+            link: 'https://t.me/HovRonQiblockchain'
         },
         {
             value: 'cn',
-            icon: <CNFlag/>
+            icon: <CNFlag/>,
+            link: '#'
         },
         {
             value: 'ru',
-            icon: <RUFlag/>
+            icon: <RUFlag/>,
+            link: 'https://t.me/qie_russia'
         }
     ];
     return (
         <div className={classes.wrapper}>
             {langOptions.map((option, index) => (
-                <LanguageItem key={'key_' + index} value={option.value} icon={option.icon}/>
+                <LanguageItem key={'key_' + index} value={option.value} icon={option.icon} link={option.link}/>
             ))}
         </div>
     );

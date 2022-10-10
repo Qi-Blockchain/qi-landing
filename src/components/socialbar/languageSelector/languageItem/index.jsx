@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './styles.module.scss';
 
-const LanguageItem = ({value, icon}) => {
+const LanguageItem = ({value, icon, link}) => {
     return (
         <div>
             <input
@@ -12,7 +12,9 @@ const LanguageItem = ({value, icon}) => {
                 className={classes.input}
             />
             <label htmlFor={'lang-' + value} className={classes.label}>
-                {icon}
+                <a href={link} target={'_blank'}>
+                    {icon}
+                </a>
             </label>
         </div>
     );

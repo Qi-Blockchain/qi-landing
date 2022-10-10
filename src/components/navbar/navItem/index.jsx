@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from './styles.module.scss';
 
-const NavItem = ({text}) => {
+const NavItem = ({text, link}) => {
     return (
-        <a href='#' className={classes.link}>
+        <a href={link} className={classes.link} target={'_blank'}>
             {text}
         </a>
     );

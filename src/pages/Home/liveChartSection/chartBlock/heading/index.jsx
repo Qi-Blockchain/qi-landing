@@ -6,7 +6,7 @@ const Heading = () => {
         <div className={classes.text}>
             Data from
             <span> </span>
-            <a className={classes.link}>
+            <a className={classes.link} href={'https://coinmarketcap.com/currencies/qi-blockchain/'} target={'_blank'}>
                  coinmarketcap.com
             </a>
         </div>
