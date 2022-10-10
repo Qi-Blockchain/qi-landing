@@ -7,6 +7,8 @@
 .menu {
   position: absolute;
   right: -15px;
+  margin-top: -70px;
+  padding-top: 70px;
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -27,4 +29,9 @@
   & p:last-child {
     padding-bottom: 32px;
   }
+}
+
+.iconwrapper {
+  position: relative;
+  z-index: 11;
 }

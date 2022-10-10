@@ -14,7 +14,7 @@ const BurgerMenu = () => {
 
     return (
         <div className={classes.wrapper}>
-            <div onClick={() => setIsActive(!isActive)}>
+            <div onClick={() => setIsActive(!isActive)} className={classes.iconwrapper}>
                 {isActive?
                     <BurgerOpenedIcon/>
                     :
