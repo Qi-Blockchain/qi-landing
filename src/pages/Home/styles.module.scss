@@ -3,33 +3,22 @@
 .startScreenWrapper {
   height: 959px;
   background: url("../../assets/images/bg-start-screen.png");
-  background-repeat: repeat-x;
-  background-size: auto;
+  background-size: 100% 170%;
   overflow-x: hidden;
 
 
   @include  tablet {
     background-size: auto;
-  }
-
-  @include mobile {
-    background-position: top 70px right -210px;
   }
 }
 
 .floatingSectionWrapper {
   background: url("../../assets/images/floating-objects-bg.png");
-  background-repeat: repeat-x;
-  background-size: auto;
+  background-size: 100% 170%;
   overflow-x: hidden;
-
 
   @include  tablet {
     background-size: auto;
-  }
-
-  @include mobile {
-    background-position: top 70px right -210px;
   }
 }
 
@@ -41,13 +30,13 @@
   overflow-x: hidden;
 
 
-  @include  tablet {
-    background-size: auto;
-  }
-
-  @include mobile {
-    background-position: top 70px right -210px;
-  }
+  //@include  tablet {
+  //  background-size: auto;
+  //}
+  //
+  //@include mobile {
+  //  background-position: top 70px right -210px;
+  //}
 }
 
 .sliderSectionWrapper {
