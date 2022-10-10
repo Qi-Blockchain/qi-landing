@@ -63,4 +63,9 @@
 .testOne {
   background: url("../../assets/images/web-without-footer.png");
   background-size: cover;
+
+  @include mobile-medium {
+    background: url("../../assets/images/Mobile-1.png");
+    background-size: cover;
+  }
 }

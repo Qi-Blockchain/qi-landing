@@ -13,11 +13,11 @@ const TextSide = () => {
 
     return (
         <div className={classes.wrapper}>
-            {screenWidth < 1025?
-                <FloatingObjects/>
-                :
-                <></>
-            }
+            {/*{screenWidth < 1025?*/}
+            {/*    <FloatingObjects/>*/}
+            {/*    :*/}
+            {/*    <></>*/}
+            {/*}*/}
             <ScreenHeading/>
             <ScreenDescription/>
             <ButtonWrapper>
