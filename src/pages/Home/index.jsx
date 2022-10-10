@@ -41,8 +41,6 @@ const Home = () => {
                     <CompareSection/>
                 </div>
                 <BlockChainSection/>
-            </div>
-            <div className={classes.testTwo}>
                 <div className={classes.sliderSectionWrapper}>
                     <SliderSection/>
                 </div>
