@@ -9,13 +9,12 @@ const NumbersBlock = () => {
         fetch('https://solo.qi.mineradnow.space/api2/v1/token/QIE/rates?period=1h')
             .then((response) => response.json())
             .then((data) => {
-                console.log(data)
                 setState(data.data.rates[data.data.rates.length - 1].rate.toFixed(4))
             });
     }
 
     useEffect(() => {
-        getNum()
+        getNum();
     }, []);
 
     return (
