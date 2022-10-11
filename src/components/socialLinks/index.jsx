@@ -8,6 +8,7 @@ import {ReactComponent as FBIcon} from "../../assets/images/facebook-icon.svg";
 import {ReactComponent as TwitterIcon} from "../../assets/images/twitter-icon.svg";
 import {ReactComponent as DiscordIcon} from "../../assets/images/discord-icon.svg";
 import {ReactComponent as TGIcon} from "../../assets/images/telegram-icon.svg";
+import {ReactComponent as GitIcon} from "../../assets/images/github-icon.svg";
 
 const SocialLinks = () => {
     return (
@@ -23,6 +24,9 @@ const SocialLinks = () => {
             </SocialItem>
             <SocialItem link={LINKS.TWITTER}>
                 <TwitterIcon/>
+            </SocialItem>
+            <SocialItem link={LINKS.GITHUB}>
+                <GitIcon/>
             </SocialItem>
             <SocialItem link={LINKS.DISCORD}>
                 <DiscordIcon/>
