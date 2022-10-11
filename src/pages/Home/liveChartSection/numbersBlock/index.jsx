@@ -3,6 +3,7 @@ import classes from './styles.module.scss';
 import {ReactComponent as Logo} from "../../../../assets/images/logo.svg";
 
 const NumbersBlock = () => {
+
     return (
         <div className={classes.wrapper}>
             <div className={classes.headingWrapper}>
