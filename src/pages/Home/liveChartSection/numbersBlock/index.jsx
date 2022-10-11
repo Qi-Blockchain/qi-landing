@@ -15,7 +15,7 @@ const NumbersBlock = () => {
                 </div>
             </div>
             <div className={classes.priceWrapper}>
-                <div className={classes.price}>$0.1169</div>
+                <div className={classes.price}>$0.174</div>
                 <div className={classes.label}>+4.47%</div>
             </div>
         </div>
