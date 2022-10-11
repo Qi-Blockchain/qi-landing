@@ -29,3 +29,11 @@ body {
 .flick-custom .flicking-camera {
   gap: 20px;
 }
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  overflow: hidden;
+}

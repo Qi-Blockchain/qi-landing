@@ -6,7 +6,7 @@ const TabSelect = () => {
     return (
         <div className={classes.wrapper}>
             <TabItem value={'news'} defaultChecked={true}/>
-            {/*<TabItem value={'videos'} defaultChecked={false}/>*/}
+            <TabItem value={'videos'} defaultChecked={false}/>
         </div>
     );
 };
