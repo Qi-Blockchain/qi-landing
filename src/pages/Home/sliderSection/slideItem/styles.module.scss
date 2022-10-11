@@ -3,11 +3,15 @@
 
 .wrapper {
   max-width: 459px;
-  height: 308px;
+  height: 305px;
   padding: 32px;
   background: rgba(16, 15, 15, 0.5);
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 32px;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
 
   @include tablet {
     max-width: 305px;
