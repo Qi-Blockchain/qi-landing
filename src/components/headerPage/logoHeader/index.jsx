@@ -7,7 +7,7 @@ const LogoHeader = () => {
     return (
         <div className={classes.wrapper}>
             <div className={classes.logoIcon}>{<LogoIcon/>}</div>
-            <div className={classes.logoText}>{<LogoText/>}</div>
+            <div className={classes.logoText}>QiBlockchain</div>
         </div>
     );
 };

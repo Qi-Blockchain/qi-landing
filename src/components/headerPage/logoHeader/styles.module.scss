@@ -9,6 +9,9 @@
 }
 
 .logoText {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
   @include tablet {
     display: none;
   }
