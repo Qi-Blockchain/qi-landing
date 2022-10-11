@@ -17,6 +17,8 @@
 .image {
   border-radius: 16px;
   margin-bottom: 32px;
+  height: 128px;
+  width: 459px;
 
   @include tablet {
     max-width: 305px;

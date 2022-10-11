@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from "../sliderBlock/styles.module.scss";
 import SlideItem from "../slideItem";
-import imgSea from "../../../../assets/images/img-1.png";
-import imgServer from "../../../../assets/images/img-2.png";
+import imgSea from '../../../../assets/images/ef8525717d00b63651ecc117d578f04e.webp';
+import imgServer from '../../../../assets/images/LYNXMPEE0502N_L.jpeg';
 import Flicking from "@egjs/react-flicking";
 import "@egjs/react-flicking/dist/flicking.css";
 
