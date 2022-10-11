@@ -15,7 +15,7 @@ const LanguageSelector = () => {
         {
             value: 'cn',
             icon: <CNFlag/>,
-            link: '#'
+            link: 'https://t.me/Qiblockchain'
         },
         {
             value: 'ru',

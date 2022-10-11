@@ -34,7 +34,7 @@ const LiveChartSection = () => {
                         digifinex
                     </a>,
                     &nbsp;
-                    <a className={classes.link} href={'#'}>
+                    <a className={classes.link} href={'https://www.bitmart.com/trade/en?symbol=QIE_USDT&layout=basic'}>
                         bitmart
                     </a>,
                     &nbsp;
