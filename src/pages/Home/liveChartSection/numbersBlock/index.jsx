@@ -1,8 +1,22 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import classes from './styles.module.scss';
 import {ReactComponent as Logo} from "../../../../assets/images/logo.svg";
 
 const NumbersBlock = () => {
+    const  [state, setState] = useState(0);
+
+    const getNum = () => {
+        fetch('https://solo.qi.mineradnow.space/api2/v1/token/QIE/rates?period=1h')
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data)
+                setState(data.data.rates[data.data.rates.length - 1].rate.toFixed(4))
+            });
+    }
+
+    useEffect(() => {
+        getNum()
+    }, []);
 
     return (
         <div className={classes.wrapper}>
@@ -16,8 +30,8 @@ const NumbersBlock = () => {
                 </div>
             </div>
             <div className={classes.priceWrapper}>
-                <div className={classes.price}>$0.174</div>
-                <div className={classes.label}>+4.47%</div>
+                <div className={classes.price}>${state}</div>
+                {/*<div className={classes.label}>+4.47%</div>*/}
             </div>
         </div>
     );
