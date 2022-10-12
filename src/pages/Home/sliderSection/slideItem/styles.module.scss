@@ -9,9 +9,8 @@
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 32px;
 
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 
   @include tablet {
     max-width: 305px;
@@ -42,7 +41,6 @@
 }
 
 .heading {
-  margin-bottom: 16px;
   font-weight: 800;
   font-size: 18px;
   letter-spacing: -0.015em;
@@ -60,7 +58,19 @@
   letter-spacing: -0.015em;
   color: $white-50;
 
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 12;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
   @include tablet {
     font-size: 14px;
   }
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
