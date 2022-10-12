@@ -3,7 +3,7 @@ import classes from './styles.module.scss';
 import {ReactComponent as BitcoinIcon} from "../../../../assets/images/bitcoin-icon-table.svg";
 import {ReactComponent as EthereumIcon} from "../../../../assets/images/ethereum-icon-table.svg";
 import {ReactComponent as RippleIcon} from "../../../../assets/images/ripple-icon-table.svg";
-import {ReactComponent as QiIcon} from "../../../../assets/images/qi-icon-table.svg";
+import {ReactComponent as QiIcon} from "../../../../assets/images/QIBadge.svg";
 import {ReactComponent as CheckIcon} from "../../../../assets/images/check-icon.svg";
 import {ReactComponent as XIcon} from "../../../../assets/images/check-x-icon.svg";
 import ProgressBar from "@ramonak/react-progress-bar";
