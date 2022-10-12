@@ -3,6 +3,8 @@
 .containerPage {
   max-width: 1279px;
   margin: 0 auto;
+
+  padding: 0 15px;
 }
 
 .wrapper {
@@ -10,10 +12,6 @@
 
   @include screen_1293 {
     justify-content: center;
-  }
-
-  @include tablet {
-    margin: 0 15px;
   }
 }
 

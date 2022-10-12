@@ -9,22 +9,22 @@ const FeaturesMobile = () => {
         <div className={classes.wrapper}>
             <div className={'flick-custom'}>
                 <Flicking moveType="freeScroll" bound={true}>
-                    <div>
+                    <div className={classes.sliderWrapper}>
                         <TextBlurBg text='Scalable and Developer Friendly'/>
                     </div>
-                    <div>
+                    <div className={classes.sliderWrapper}>
                         <TextBlurBg text='Secure, Fast'/>
                     </div>
-                    <div>
+                    <div className={classes.sliderWrapper}>
                         <TextBlurBg text='Eco-friendly'/>
                     </div>
-                    <div>
+                    <div className={classes.sliderWrapper}>
                         <TextBlurBg text='Decentralised'/>
                     </div>
-                    <div>
+                    <div className={classes.sliderWrapper}>
                         <TextBlurBg text='Low transaction fees'/>
                     </div>
-                    <div>
+                    <div className={classes.sliderWrapper}>
                         <TextBlurBg text='Easy Built decentralised Apps'/>
                     </div>
                 </Flicking>

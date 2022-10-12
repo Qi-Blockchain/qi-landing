@@ -6,10 +6,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  @include screen_1635 {
-    left: -100px;
-  }
-
   @include screen_1293 {
     left: unset;
     right: 50px;
