@@ -63,6 +63,7 @@
 .testOne {
   background: url("../../assets/images/web-without-footer.png");
   background-size: cover;
+  overflow-x: hidden;
 
   @include mobile-medium {
     background: url("../../assets/images/Mobile-1.png");

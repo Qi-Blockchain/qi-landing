@@ -11,14 +11,16 @@
     max-width: 674px;
     width: 100% !important;
     max-height: 173px;
+    padding-right: 15px;
 
     @include screen_1293 {
       max-width: 450px;
     }
 
     @include tablet {
-      max-width: unset;
-      width: 200px !important;
+      padding-right: 84px;
+      max-width: 100%;
+      width: 100% !important;
     }
   }
 }

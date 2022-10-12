@@ -1,16 +1,17 @@
-import React from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {
     Chart as ChartJS,
     CategoryScale,
     LinearScale,
     PointElement,
     LineElement,
-    Title,
     Tooltip,
-    Legend,
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import classes from './styles.module.scss';
+import ratesApi from "../../../../../services/endpoints/rates";
+import {useRecoilValue} from "recoil";
+import {chartPeriodState} from "../../../../../store/chartPeriod";
 
 ChartJS.register(
     CategoryScale,
@@ -21,6 +22,35 @@ ChartJS.register(
 );
 
 const Chart = () => {
+    const [chartData, setChartData] = useState([]);
+    const [chartLabelData, setChartLabelData] = useState([]);
+    const [tickData, setTickData] = useState([]);
+    const periodValue = useRecoilValue(chartPeriodState);
+    const ref = useRef();
+
+    const getRatesList = async () => {
+      try {
+          const res = await ratesApi.getRates(periodValue);
+
+          const dataTemp = res.data.data.rates.rateData.slice(-18);
+          let ratesData = [];
+          let labelData = [];
+
+          dataTemp.forEach((elem) => {
+              ratesData.push(elem.rate);
+              labelData.push(elem.created_at)
+          });
+
+          setChartData(ratesData);
+          setChartLabelData(labelData);
+      } catch (e) {
+          console.log(e)
+      }
+    }
+
+    useEffect(() => {
+        getRatesList();
+    }, [periodValue])
 
     const options = {
         scales: {
@@ -29,7 +59,7 @@ const Chart = () => {
             },
             y: {
                 display: false
-            }
+            },
         },
         responsive: true,
         plugins: {
@@ -37,28 +67,56 @@ const Chart = () => {
     };
 
     const data = {
-        labels: ['1 Сен, 12:01', '2 Сен, 12:01', '3 Сен, 12:01', '4 Сен, 12:01', '5 Сен, 12:01', '6 Сен, 12:01', '7 Сен, 12:01', '8 Сен, 12:01', '9 Сен, 12:01', '10 Сен, 12:01', '11 Сен, 12:01', '12 Сен, 12:01', '13 Сен, 12:01', '14 Сен, 12:01', '15 Сен, 12:01', '16 Сен, 12:01', '17 Сен, 12:01', '18 Сен, 12:01'],
+        labels: chartLabelData,
         datasets: [
             {
-                data: [0.11, 0.15, 0.13, 0.13, 0.11, 0.14, 0.11, 0.11, 0.13, 0.13, 0.14, 0.15, 0.13, 0.12, 0.11, 0.12, 0.11, 0.11, 0.2],
+                data: chartData,
                 lineTension: 0.3,
                 fill: true,
-                borderColor: '#FF136D',
+                borderColor: (context) => {
+                    const colorStart = '#3731B9';
+                    const colorEnd = '#FF136D';
+                    const ctx = context.chart.ctx;
+                    const area = context.chart.chartArea;
+
+                    const gradient = ctx.createLinearGradient(0, area.bottom, 0, area.top);
+
+                    gradient.addColorStop(0, colorStart);
+                    gradient.addColorStop(1, colorEnd);
+
+                    return gradient;
+                },
                 pointRadius: 0,
             }
         ]
     };
 
+    const setChartTickets = () => {
+        const arr = [];
+        const ticks = ref.current.scales.y.ticks;
+        const ticksSorted = ticks.slice(-5).reverse();
+
+        ticksSorted.forEach((elem) => arr.push(elem.label));
+
+        setTickData(arr);
+    }
+
+    useEffect(() => {
+        setChartTickets();
+    }, [chartData]);
+
+
     return (
         <div className={classes.wrapper}>
             <div className={classes.legendWrapper}>
-                <div className={classes.legendItem}>0.16</div>
-                <div className={classes.legendItem}>0.15</div>
-                <div className={classes.legendItem}>0.14</div>
-                <div className={classes.legendItem}>0.13</div>
-                <div className={classes.legendItem}>0.12</div>
+                {tickData.length &&
+                    tickData.map((elem, index) => (
+                        <div key={'key_' + index} className={classes.legendItem}>{elem}</div>
+                    ))
+                }
             </div>
             <Line
+                ref={ref}
                 data={data}
                 options={options}
             />

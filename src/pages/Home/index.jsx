@@ -16,9 +16,9 @@ const Home = () => {
 
     const checkBurgerStatus = () => {
         if (burgerActive) {
-            document.body.style.overflow = "hidden"
+            document.body.style.overflowY = "hidden"
         } else {
-            document.body.style.overflow = "auto"
+            document.body.style.overflowY = "auto"
         }
     }
     useEffect(() => {

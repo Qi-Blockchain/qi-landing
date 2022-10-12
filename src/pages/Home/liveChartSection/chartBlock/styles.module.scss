@@ -5,6 +5,7 @@
   justify-content: space-between;
 
   @include tablet {
+    margin-top: 24px;
     flex-direction: column;
     gap: 12px;
   }
