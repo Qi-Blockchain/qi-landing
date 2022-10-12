@@ -24,21 +24,46 @@ ChartJS.register(
 const Chart = () => {
     const [chartData, setChartData] = useState([]);
     const [chartLabelData, setChartLabelData] = useState([]);
+    const [perElement, setPerElement] = useState(12);
     const [tickData, setTickData] = useState([]);
     const periodValue = useRecoilValue(chartPeriodState);
     const ref = useRef();
+
+    const checkPerElement = () => {
+        if (periodValue === '24h') {
+            setPerElement(12);
+        }
+
+        if (periodValue === 'week') {
+            setPerElement(37);
+        }
+
+        if (periodValue === 'month') {
+            setPerElement(43);
+        }
+
+        if (periodValue === '3month') {
+            setPerElement(27);
+        }
+
+        if (periodValue === '12month') {
+            setPerElement(17);
+        }
+    }
 
     const getRatesList = async () => {
       try {
           const res = await ratesApi.getRates(periodValue);
 
-          const dataTemp = res.data.data.rates.rateData.slice(-18);
+          const dataTemp = res.data.data.rates.rateData;
           let ratesData = [];
           let labelData = [];
 
-          dataTemp.forEach((elem) => {
-              ratesData.push(elem.rate);
-              labelData.push(elem.created_at)
+          dataTemp.forEach((elem, index) => {
+              if (index % perElement === 0) {
+                  ratesData.push(elem.rate);
+                  labelData.push(elem.created_at)
+              }
           });
 
           setChartData(ratesData);
@@ -49,6 +74,7 @@ const Chart = () => {
     }
 
     useEffect(() => {
+        checkPerElement();
         getRatesList();
     }, [periodValue])
 
