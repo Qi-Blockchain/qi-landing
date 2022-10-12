@@ -79,7 +79,7 @@ const Chart = () => {
                     const ctx = context.chart.ctx;
                     const area = context.chart.chartArea;
 
-                    const gradient = ctx.createLinearGradient(0, area.bottom, 0, area.top);
+                    const gradient = ctx.createLinearGradient(area.left, 0, area.right, 0);
 
                     gradient.addColorStop(0, colorStart);
                     gradient.addColorStop(1, colorEnd);
