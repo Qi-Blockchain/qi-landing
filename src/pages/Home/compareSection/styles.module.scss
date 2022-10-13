@@ -25,6 +25,10 @@
   flex-direction: column;
   gap: 24px;
   max-width: 637px;
+
+  @include tablet {
+    max-width: 100%;
+  }
 }
 
 .text {
