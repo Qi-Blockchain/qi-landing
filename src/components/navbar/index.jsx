@@ -12,7 +12,9 @@ const Navbar = () => {
             <Link to={ROUTES.FAQ} className={classes.link} >
                 FAQ
             </Link>
-            <NavItem text={'Terms of Service'} link={'https://qiblockchain.online/index.php/terms-and-conditions'}/>
+            <Link to={ROUTES.TERMS} className={classes.link} >
+                Terms of Service
+            </Link>
         </nav>
     );
 };

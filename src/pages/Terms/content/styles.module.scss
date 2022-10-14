@@ -1,0 +1,46 @@
+@import "./src/assets/styles/mixin/breakpoints";
+@import "./src/assets/styles/variables/colors";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 1279px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: -0.015em;
+  color: $white;
+
+  @include tablet {
+    font-size: 18px;
+  }
+}
+
+.text {
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: -0.015em;
+  color: $white-80;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+.list {
+  list-style-type: decimal;
+  padding-left: 40px;
+}
+
+.highlight {
+  font-weight: 600;
+}
+
+.email {
+ color: $pink;
+}

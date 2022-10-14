@@ -1,5 +1,5 @@
 import {Route, Routes} from 'react-router-dom';
-import {Home, Faq} from 'pages';
+import {Home, Faq, Terms} from 'pages';
 import {ROUTES} from "constant/routes";
 import './assets/styles/app.scss';
 import {RecoilRoot} from "recoil";
@@ -10,6 +10,7 @@ const  App = () => {
           <Routes>
               <Route path={ROUTES.HOMEPAGE} element={<Home/>}/>
               <Route path={ROUTES.FAQ} element={<Faq/>}/>
+              <Route path={ROUTES.TERMS} element={<Terms/>}/>
           </Routes>
       </RecoilRoot>
   );
