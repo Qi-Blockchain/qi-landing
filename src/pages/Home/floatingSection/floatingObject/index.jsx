@@ -5,7 +5,7 @@ import {ReactComponent as CaretIcon} from "../../../../assets/images/caret-right
 const FloatingObject = ({text, link}) => {
     return (
         <div className={classes.wrapper}>
-            <a href={link} target={'_blank'}>
+            <a href={link} target={'_blank'} rel="noopener noreferrer">
                 {text}
                 <CaretIcon/>
             </a>

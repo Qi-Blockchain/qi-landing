@@ -1,0 +1,9 @@
+@import "./src/assets/styles/variables/colors";
+
+.heading {
+  font-weight: 800;
+  font-size: 32px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: $white;
+}

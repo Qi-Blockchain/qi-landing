@@ -1,0 +1,17 @@
+@import "./src/assets/styles/variables/colors";
+
+.btn {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 19px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -0.015em;
+  color: $white;
+  background: $white-5;
+  border-radius: 16px;
+}

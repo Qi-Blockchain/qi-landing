@@ -12,7 +12,7 @@ const LanguageItem = ({value, icon, link}) => {
                 className={classes.input}
             />
             <label htmlFor={'lang-' + value} className={classes.label}>
-                <a href={link} target={'_blank'}>
+                <a href={link} target={'_blank'} rel="noopener noreferrer">
                     {icon}
                 </a>
             </label>

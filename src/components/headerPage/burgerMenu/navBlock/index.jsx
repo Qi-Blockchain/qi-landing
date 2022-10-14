@@ -1,16 +1,18 @@
 import React from 'react';
 import classes from './styles.module.scss';
+import {Link} from "react-router-dom";
+import {ROUTES} from "constant";
 
 const NavBlock = () => {
     return (
         <div className={classes.wrapper}>
-            <a href={'https://docs.qiblockchain.online/'} className={classes.link}>
+            <a href={'https://docs.qiblockchain.online/'} className={classes.link} rel="noopener noreferrer">
                 Docs
             </a>
-            <a href={'https://qiblockchain.online/index.php/faq'} className={classes.link}>
+            <Link to={ROUTES.FAQ} className={classes.link} >
                 FAQ
-            </a>
-            <a href={'https://qiblockchain.online/index.php/terms-and-conditions'} className={classes.link}>
+            </Link>
+            <a href={'https://qiblockchain.online/index.php/terms-and-conditions'} className={classes.link} rel="noopener noreferrer">
                 Terms of Service
             </a>
         </div>

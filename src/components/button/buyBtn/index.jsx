@@ -5,7 +5,7 @@ import {ReactComponent as CoinIcon} from "../../../assets/images/coin-icon.svg";
 const BuyNowBtn = ({link}) => {
     return (
         <button className={classes.button}>
-            <a href={link} target={'_blank'}>
+            <a href={link} target={'_blank'} rel="noopener noreferrer">
                 Buy Now
                 <CoinIcon/>
             </a>

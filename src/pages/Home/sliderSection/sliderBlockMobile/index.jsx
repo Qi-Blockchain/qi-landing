@@ -13,7 +13,7 @@ const SliderBlockMobile = () => {
     return (
         <div>
             <Flicking align="prev">
-                <a href='https://qiblockchain.online/index.php/component/content/article/69-the-crown-prince-of-dubai-says-he-has-a-metaverse-strategy?catid=15&Itemid=101' className={classes.link} target='_blank'>
+                <a href='https://qiblockchain.online/index.php/component/content/article/69-the-crown-prince-of-dubai-says-he-has-a-metaverse-strategy?catid=15&Itemid=101' className={classes.link} target='_blank' rel="noopener noreferrer">
                     <SlideItem
                         img={dubaiNewsImg}
                         alt={'dubai prince'}
@@ -21,7 +21,7 @@ const SliderBlockMobile = () => {
                         heading={'The crown prince of Dubai says he has a "metaverse strategy"'}
                         text={'This week, Crown Prince Sheikh Hamdan bin Mohammed bin Rashid Al Maktoum announced a new “metaverse strategy” that he says will create 40,000 new virtual jobs and add $4 billion to the city’s GDP in five years, according to a Monday tweet. “The strategy emphasises fostering talent and investing in future capabilities by providing the necessary support in metaverse education aimed at developers, content creators and users of digital platforms in the metaverse community,” the United Arab Emirates’ official news agency, WAM, wrote in a statement. Details on how the strategy will be carried out are scant, but the pillars of the plan include fostering “metaverse innovation and economic contribution,” cultivating metaverse talent, and developing metaverse use cases and applications within the Dubai government, according to Sheikh Hamdan’s Monday tweet. It was not immediately clear how much the Dubai government would invest in supporting the strategy.'}/>
                 </a>
-                <a href='https://qiblockchain.online/index.php/component/content/article/68-blockchain-s-biggest-innovations-are-saving-billions-each-year-for-the-world-s-largest-companies?catid=15&Itemid=101' className={classes.link} target='_blank'>
+                <a href='https://qiblockchain.online/index.php/component/content/article/68-blockchain-s-biggest-innovations-are-saving-billions-each-year-for-the-world-s-largest-companies?catid=15&Itemid=101' className={classes.link} target='_blank' rel="noopener noreferrer">
                     <SlideItem
                         img={forbesNewsImg}
                         alt={'forbes news'}
@@ -29,7 +29,7 @@ const SliderBlockMobile = () => {
                         heading={'Blockchain’s biggest innovations are saving billions each year for the world’s largest companies'}
                         text={'You’ve come a long way, blockchain! Since our inaugural roundup of the Blockchain 50, published in 2019, the billion-dollar companies (minimum, by sales or market value) on our annual list have moved beyond test projects and now rely on “distributed ledger” technology to do serious work. A lot of the action is in the back office, verifying insurance claims or facilitating real estate deals. It has also become vital to supply chains, whether checking the provenance of conflict minerals like cobalt or tracking auto parts for Renault. Nearly half of the Blockchain 50 are based outside the United States; 14% are Chinese. New this year: venture capital firms, which as a group invested more than $32 billion in the sector in 2021.'}/>
                 </a>
-                <a href='https://qiblockchain.online/index.php/component/content/article/67-citi-predicts-5-billion-users?catid=15&Itemid=101' className={classes.link} target='_blank'>
+                <a href='https://qiblockchain.online/index.php/component/content/article/67-citi-predicts-5-billion-users?catid=15&Itemid=101' className={classes.link} target='_blank' rel="noopener noreferrer">
                     <SlideItem
                         img={imgServer}
                         alt={'citi news'}
@@ -38,7 +38,7 @@ const SliderBlockMobile = () => {
                         text={'Citi released a new Global Perspectives & Solutions (Citi GPS) report titled “Metaverse and Money: Decrypting the Future” Thursday. The leading global bank has approximately 200 million customer accounts and does business in more than 160 countries and jurisdictions. The 184-page report explores various aspects of the metaverse in-depth. They include what a metaverse is; its infrastructure; digital assets including non-fungible tokens (NFTs) in the metaverse; money and defi (decentralized finance) in the metaverse; and regulatory developments applicable to the metaverse. Regarding the size of the metaverse economy, Citi described: “We believe the metaverse may be the next generation of the internet — combining the physical and digital world in a persistent and immersive manner — and not purely a virtual reality world.”'}
                     />
                 </a>
-                <a href='https://qiblockchain.online/index.php/component/content/article/66-4-ways-we-could-actually-use-nfts?catid=15&Itemid=101' className={classes.link} target='_blank'>
+                <a href='https://qiblockchain.online/index.php/component/content/article/66-4-ways-we-could-actually-use-nfts?catid=15&Itemid=101' className={classes.link} target='_blank' rel="noopener noreferrer">
                     <SlideItem
                         img={nftNewsImg}
                         alt={'nft news'}
@@ -46,7 +46,7 @@ const SliderBlockMobile = () => {
                         heading={'4 ways we could actually use NFTs'}
                         text={"It's hard to escape reading about NFTs nowadays. If you need a quick refresh, NFTs are digital tokens stored on the blockchain signaling your ownership in something, like a piece of artwork. We typically read about them in association with the so-called Bored Ape Yacht Club whose sales have surpassed $1 billion, or record-setting art auctions, or how celebrities are jumping on the NFT and Web3 bandwagon. But there could actually be some practical uses for them."}/>
                 </a>
-                <a href='https://qiblockchain.online/index.php/component/content/article/65-building-a-transparent-supply-chain?catid=15&Itemid=101' className={classes.link} target='_blank'>
+                <a href='https://qiblockchain.online/index.php/component/content/article/65-building-a-transparent-supply-chain?catid=15&Itemid=101' className={classes.link} target='_blank' rel="noopener noreferrer">
                     <SlideItem
                         img={imgServer}
                         alt={'supply chain'}
@@ -54,7 +54,7 @@ const SliderBlockMobile = () => {
                         heading={'Building a Transparent Supply Chain'}
                         text={'Blockchain, the digital record-keeping technology behind Bitcoin and other cryptocurrency networks, is a potential game changer in the financial world. But another area where it holds great promise is supply chain management. Blockchain can greatly improve supply chains by enabling faster and more cost-efficient delivery of products, enhancing products’ traceability, improving coordination between partners, and aiding access to financing. To better understand this opportunity, we studied seven major U.S. corporations that are leaders in supply chain management and are trying to figure out how blockchain can help solve the challenges they face. These companies—Corning, Emerson, Hayward, IBM, Mastercard, and two others that wish to remain anonymous—operate in varied industries: manufacturing, retailing, technology, and financial services.'}/>
                 </a>
-                <a href='https://qiblockchain.online/index.php/component/content/article/64-de-beers-using-blockchain-to-authenticate-diamonds?catid=15&Itemid=101' className={classes.link} target='_blank'>
+                <a href='https://qiblockchain.online/index.php/component/content/article/64-de-beers-using-blockchain-to-authenticate-diamonds?catid=15&Itemid=101' className={classes.link} target='_blank' rel="noopener noreferrer">
                     <SlideItem
                         img={imgServer}
                         alt={'blockchain news'}
@@ -63,7 +63,7 @@ const SliderBlockMobile = () => {
                         text={'De Beers, the diamond unit of Anglo American, is harnessing blockchain technology to keep track of every movement of a gem. Set to launch later this year, the new industry-wide blockchain aims to document the movement of diamonds and other gems from the time they are dug up from the ground. Although cryptocurrency is the most prominent application of blockchain technology at this point, it is but one of many. Increasingly, businesses of all types have looked to the emerging technology as a means of upgrading their models, adding security and documenting transactions. (See also: Is Apple Planning to Use Blockchain?)'}
                         />
                 </a>
-                <a href='https://qiblockchain.online/index.php/component/content/article/63-what-is-blockchain?catid=15&Itemid=101' className={classes.link} target='_blank'>
+                <a href='https://qiblockchain.online/index.php/component/content/article/63-what-is-blockchain?catid=15&Itemid=101' className={classes.link} target='_blank' rel="noopener noreferrer">
                     <SlideItem
                         img={imgServer}
                         alt={'what is blockchain news'}

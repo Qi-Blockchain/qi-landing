@@ -4,6 +4,8 @@ import SectionHeading from "./sectionHeading";
 import NumbersBlock from "./numbersBlock";
 import {BuyBtn} from "components";
 import ChartBlock from "./chartBlock";
+import {Link} from "react-router-dom";
+import {ROUTES} from "../../../constant";
 
 const LiveChartSection = () => {
     return (
@@ -25,20 +27,20 @@ const LiveChartSection = () => {
                 <div className={classes.footerWrapper}>
                     Buy on
                     &nbsp;
-                    <a className={classes.link} href={'#'}>
+                    <Link className={classes.link} to={ROUTES.HOMEPAGE}>
                         p2pb2b
-                    </a>
+                    </Link>
                     ,
                     &nbsp;
-                    <a className={classes.link} href={'#'}>
+                    <Link className={classes.link} to={ROUTES.HOMEPAGE}>
                         digifinex
-                    </a>,
+                    </Link>,
                     &nbsp;
-                    <a className={classes.link} href={'https://www.bitmart.com/trade/en?symbol=QIE_USDT&layout=basic'}>
+                    <a target={'_blank'} className={classes.link} href={'https://www.bitmart.com/trade/en?symbol=QIE_USDT&layout=basic'} rel="noopener noreferrer">
                         bitmart
                     </a>,
                     &nbsp;
-                    <a className={classes.link} href={'https://www.xt.com/trade/qie_usdt'} target={'_blank'}>
+                    <a className={classes.link} href={'https://www.xt.com/trade/qie_usdt'} target={'_blank'} rel="noopener noreferrer">
                         xt.com
                     </a>
                 </div>

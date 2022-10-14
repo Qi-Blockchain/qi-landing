@@ -1,0 +1,116 @@
+@import "./src/assets/styles/variables/colors";
+
+.headingWrapper {
+  text-align: left;
+}
+
+.content {
+  cursor: default;
+  display: none;
+  margin: 0;
+  margin-top: 8px;
+  border: 0;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: -0.015em;
+  color: $white-80;
+}
+
+.contentActive {
+  cursor: auto;
+  display: inline-block;
+}
+
+.button {
+  position: relative;
+  z-index: 1;
+  border: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: -0.015em;
+  color: $white-70;
+  background: transparent;
+}
+
+.buttonActive {
+  color: $white;
+}
+
+.labelInfo {
+  display: none;
+  align-items: end;
+  gap: 12px;
+  margin-top: 8px;
+  padding: 13px 16px;
+  width: fit-content;
+  opacity: 0;
+  height: 0;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: -0.015em;
+  color: $white-80;
+  background: $blue-label-10;
+  border-radius: 8px;
+
+}
+
+.labelInfoActive {
+  cursor: pointer;
+  display: flex;
+  width: fit-content;
+  opacity: 1;
+  height: auto;
+}
+
+.breakLine {
+  display: none;
+}
+
+.breakLineActive {
+  display: initial;
+}
+
+.link {
+  cursor: default;
+  display: none;
+  margin: 0;
+  margin-top: 8px;
+  border: 0;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: -0.015em;
+  color: $pink;
+}
+
+.linkActive {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.heading {
+  cursor: default;
+  display: none;
+  margin: 0;
+  margin-top: 8px;
+  border: 0;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.015em;
+  color: $white-80;
+}
+
+.headingActive {
+  display: inline-block;
+}
+
+.table {
+  display: none;
+}
+
+.tableActive {
+  display: block;
+}

@@ -61,12 +61,12 @@
 }
 
 .testOne {
-  background: url("../../assets/images/web-without-footer.png");
+  background: url("../../assets/images/Desktop_5.png");
   background-size: cover;
   overflow-x: hidden;
 
   @include mobile-medium {
-    background: url("../../assets/images/Mobile-1.png");
+    background: url("../../assets/images/Mobile5.png");
     background-size: cover;
   }
 }
