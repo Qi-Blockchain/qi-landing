@@ -62,6 +62,57 @@ const AccordionLink = () => {
             <a className={linkClasses()} href={'https://t.me/qie_russia'} target={'_blank'} rel="noopener noreferrer">
                 https://t.me/qie_russia
             </a>
+            <br className={breakLineClasses()}/>
+            <br className={breakLineClasses()}/>
+            <p className={textClasses()}>
+                Also:
+            </p>
+            <br className={breakLineClasses()}/>
+            <br className={breakLineClasses()}/>
+            <p className={textClasses()}>
+                Reddit:
+            </p>
+            <br className={breakLineClasses()}/>
+            <a className={linkClasses()} href={'https://www.reddit.com/r/qiblockchain/'} target={'_blank'} rel="noopener noreferrer">
+                https://www.reddit.com/r/qiblockchain/
+            </a>
+            <br className={breakLineClasses()}/>
+            <br className={breakLineClasses()}/>
+            <p className={textClasses()}>
+                Instagram:
+            </p>
+            <br className={breakLineClasses()}/>
+            <a className={linkClasses()} href={'https://www.instagram.com/qiblockchain.online/'} target={'_blank'} rel="noopener noreferrer">
+                https://www.instagram.com/qiblockchain.online/
+            </a>
+            <br className={breakLineClasses()}/>
+            <br className={breakLineClasses()}/>
+            <p className={textClasses()}>
+                Facebook:
+            </p>
+            <br className={breakLineClasses()}/>
+            <a className={linkClasses()} href={'https://www.facebook.com/QiBlockchain'} target={'_blank'} rel="noopener noreferrer">
+                https://www.facebook.com/QiBlockchain
+            </a>
+            <br className={breakLineClasses()}/>
+            <br className={breakLineClasses()}/>
+            <p className={textClasses()}>
+                Twitter:
+            </p>
+            <br className={breakLineClasses()}/>
+            <a className={linkClasses()} href={'https://twitter.com/qiblockchain'} target={'_blank'} rel="noopener noreferrer">
+                https://twitter.com/qiblockchain
+            </a>
+            <br className={breakLineClasses()}/>
+            <br className={breakLineClasses()}/>
+            <p className={textClasses()}>
+                Github:
+            </p>
+
+            <br className={breakLineClasses()}/>
+            <a className={linkClasses()} href={'https://github.com/Qi-Blockchain'} target={'_blank'} rel="noopener noreferrer">
+                https://github.com/Qi-Blockchain
+            </a>
         </div>
     );
 };
