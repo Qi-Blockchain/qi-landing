@@ -3,8 +3,6 @@
 .wrapper {
   position: absolute;
   z-index: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 
   @include screen_1293 {
     left: unset;

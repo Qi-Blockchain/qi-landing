@@ -2,16 +2,24 @@
 @import "./src/assets/styles/mixin/breakpoints";
 
 .containerPage {
+  position: relative;
   max-width: 1279px;
   margin: 0 auto;
+
+  @include tablet {
+    margin-top: 240px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .wrapper {
+  position: relative;
+  z-index: 2;
   margin-top: 160px;
   padding: 64px;
-  background: $black-chart-bg;
-  border: 1px solid $black-15;
-  border-radius: 32px;
+  background: transparent;
+  border: none;
 
   @include tablet {
     padding: 0 15px;
@@ -39,5 +47,37 @@
 
   @include tablet {
     font-size: 16px;
+  }
+}
+
+.rocks {
+  position: absolute;
+  z-index: 1;
+  top: -180px;
+  right: -280px;
+
+  @include screen_1635 {
+    right: -160px;
+  }
+
+  @include screen_1293 {
+    right: -70px;
+  }
+
+  @include tablet {
+    right: unset;
+    align-self: center;
+
+    img {
+      width: 500px;
+    }
+  }
+
+  @include mobile-medium {
+    align-self: start;
+
+    img {
+      width: 340px;
+    }
   }
 }

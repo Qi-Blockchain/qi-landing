@@ -6,6 +6,7 @@ import {BuyBtn} from "components";
 import ChartBlock from "./chartBlock";
 import {Link} from "react-router-dom";
 import {ROUTES} from "../../../constant";
+import rockChart from "../../../assets/images/rock-chart.png";
 
 const LiveChartSection = () => {
     return (
@@ -45,6 +46,9 @@ const LiveChartSection = () => {
                     </a>
                 </div>
             </section>
+            <div className={classes.rock}>
+                <img src={rockChart} alt="rock chart"/>
+            </div>
         </div>
     );
 };

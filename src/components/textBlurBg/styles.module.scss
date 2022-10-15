@@ -11,9 +11,59 @@
   background: linear-gradient(259.94deg, rgba(255, 255, 255, 0) -12.46%, rgba(255, 255, 255, 0.1) 114.52%);
   backdrop-filter: blur(5px);
   border-radius: 16px;
+  z-index: 1;
 
   @include screen_1293 {
     padding: 16px;
+  }
+
+  &:nth-child(1) {
+    @include screen_1293 {
+      left: -300px !important;
+    }
+  }
+
+  &:nth-child(2) {
+    left: 340px !important;
+
+    @include screen_1293 {
+      left: 0 !important;
+    }
+  }
+
+  &:nth-child(3) {
+    top: 160px !important;
+
+    @include screen_1293 {
+      left: -310px !important;
+    }
+  }
+
+  &:nth-child(4) {
+    top: 190px !important;
+    left: 360px !important;
+
+    @include screen_1293 {
+      left: 0 !important;
+    }
+  }
+
+  &:nth-child(5) {
+    top: 400px !important;
+    left: 30px !important;
+
+    @include screen_1293 {
+      left: -220px!important;
+    }
+  }
+
+  &:nth-child(6) {
+    top: 390px !important;
+    left: 320px !important;
+
+    @include screen_1293 {
+      left: 0 !important;
+    }
   }
 }
 

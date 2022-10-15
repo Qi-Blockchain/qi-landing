@@ -10,6 +10,10 @@
   //@include  tablet {
   //  background-size: auto;
   //}
+
+  @include tablet {
+    height: 100%;
+  }
 }
 
 .floatingSectionWrapper {
@@ -66,7 +70,7 @@
   overflow-x: hidden;
 
   @include mobile-medium {
-    background: url("../../assets/images/Mobile5.png");
+    background: url("../../assets/images/Mobile_versionsmall.png");
     background-size: cover;
   }
 }

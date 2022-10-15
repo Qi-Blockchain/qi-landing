@@ -1,6 +1,7 @@
 @import "./variables/colors";
 @import "./mixin/breakpoints";
 @import "fonts";
+@import "./animation/wickedcss.min.css";
 
 * {
   margin: 0;
@@ -25,6 +26,7 @@ button {
 
 body {
   background-color: $black-bg;
+  overflow-x: hidden;
 }
 
 .react-player {
@@ -66,5 +68,17 @@ body {
     position: relative !important;
     width: 100% !important;
     height: 100% !important;
+  }
+}
+
+@include mobile {
+  @keyframes rotation {
+    0% {
+      transform: rotate(0) translateX(30%) rotate(0);
+    }
+
+    100% {
+      transform: rotate(360deg) translateX(30%) rotate(-360deg);
+    }
   }
 }

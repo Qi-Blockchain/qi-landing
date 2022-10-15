@@ -2,6 +2,7 @@
 @import './src/assets/styles/mixin/breakpoints';
 
 .containerPage {
+  position: relative;
   max-width: 1279px;
   margin: 0 auto;
 }
@@ -87,4 +88,24 @@
 .link {
   display: block;
   color: $pink;
+}
+
+.rock {
+  position: absolute;
+  top: 0;
+  right: -120px;
+
+  @include screen_1293 {
+    right: -50px;
+  }
+
+  @include tablet {
+    top: -120px;
+    left: -50px;
+    right: unset;
+
+    img {
+      width: 204px;
+    }
+  }
 }

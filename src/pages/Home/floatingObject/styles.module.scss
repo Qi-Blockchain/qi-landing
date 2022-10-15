@@ -1,0 +1,124 @@
+@import "../../../assets/styles/mixin/breakpoints";
+
+.wrapper {
+  position: relative;
+  width: fit-content;
+  padding: 48px 106px 48px 64px;
+  background: linear-gradient(259.94deg, rgba(255, 255, 255, 0) -12.46%, rgba(255, 255, 255, 0.1) 114.52%);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+
+  a {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  @include mobile {
+    padding: 24px;
+    width: unset;
+  }
+}
+
+.rocket {
+  position: absolute !important;
+  top: -80px !important;
+  left: unset !important;
+  right: 60px !important;
+
+  @include tablet {
+    top: -90px !important;
+    left: -40px !important;
+    right: unset !important;
+  }
+
+  @include mobile {
+    top: -70px !important;
+    left: -10px !important;
+    right: unset !important;
+
+    svg {
+      width: 80px;
+    }
+  }
+}
+
+
+.robot {
+  position: absolute !important;
+  top: -80px !important;
+  left: 0 !important;
+
+  @include tablet {
+    top: -90px !important;
+    left: -40px !important;
+    right: unset !important;
+  }
+
+  @include mobile {
+    top: -70px !important;
+    left: -10px !important;
+    right: unset !important;
+
+    svg {
+      width: 80px;
+    }
+  }
+}
+
+.exchange {
+  position: absolute !important;
+  top: 70px !important;
+  left: 130px !important;
+
+  @include tablet {
+    top: -90px !important;
+    left: -40px !important;
+    right: unset !important;
+  }
+
+  @include mobile {
+    top: -70px !important;
+    left: -10px !important;
+    right: unset !important;
+
+    svg {
+      width: 80px;
+    }
+  }
+}
+
+
+.wrapperParallax {
+  &:nth-child(1) {
+    top: 70px !important;
+    left: 610px !important;
+
+    @include screen_1293 {
+      left: 540px !important;
+    }
+  }
+
+  &:nth-child(2) {
+    top: 380px !important;
+    left: 50px !important;
+
+    @include screen_1293 {
+      left: 30px !important;
+    }
+  }
+
+  &:nth-child(3) {
+    top: 440px !important;
+    left: 720px !important;
+
+    @include screen_1293 {
+      left: 500px !important;
+    }
+  }
+}
