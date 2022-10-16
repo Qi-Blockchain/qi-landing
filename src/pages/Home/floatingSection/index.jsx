@@ -8,11 +8,11 @@ const FloatingSection = () => {
 
     return (
         <>
-            {screen > 1025 ?
-                <FloatingBlock/>
-                :
+            {/*{screen > 1025 ?*/}
+            {/*    <FloatingBlock/>*/}
+            {/*    :*/}
                 <FloatingMobile/>
-            }
+            {/*}*/}
         </>
     );
 };

@@ -3,6 +3,10 @@
 .wrapper {
   position: relative;
 
+  @include screen_1293 {
+    right: 150px;
+  }
+
   @include tablet {
     position: unset;
   }
@@ -13,130 +17,107 @@
   right: 0;
   width: 100%;
 
-  @include tablet {
-    max-width: 60%;
-    margin: 0 auto;
-  }
-
-  @include mobile-medium {
-    max-width: 70%;
-  }
+  //@include tablet {
+  //  max-width: 60%;
+  //  margin: 0 auto;
+  //}
+  //
+  //@include mobile-medium {
+  //  max-width: 70%;
+  //}
 }
 
 .rockOneWrapper {
-  position: absolute;
-  right: -100px;
-  transform: rotate(-45deg);
-
-  @include screen_1293 {
-    right: -50px;
-  }
-
-  @include tablet {
-    top: -100px;
-    right: 0;
-    left: 0;
-  }
-
-  @include mobile {
-    top: -50px;
-  }
-
-  @include mobile-medium {
-    top: 0;
-  }
+  position: absolute !important;
+  left: 410px !important;
+  top: unset !important;
+  right: unset !important;
+  //position: absolute;
+  //right: -100px;
+  //transform: rotate(-45deg);
+  //
+  //@include screen_1293 {
+  //  right: -50px;
+  //}
+  //
+  //@include tablet {
+  //  top: -100px;
+  //  right: 0;
+  //  left: 0;
+  //}
+  //
+  //@include mobile {
+  //  top: -50px;
+  //}
+  //
+  //@include mobile-medium {
+  //  top: 0;
+  //}
 }
 
 .rockOne {
-  animation: myAnim 15s ease 0s infinite normal forwards;
+  //animation: myAnim 15s ease 0s infinite normal forwards;
 
-  img {
-    transform: rotate(45deg);
-
-    @include tablet {
-      width: 282px;
-    }
-  }
+  //img {
+  //  //transform: rotate(45deg);
+  //
+  //  @include tablet {
+  //    width: 282px;
+  //  }
+  //}
 }
 
 .rockTwoWrapper {
-  position: absolute;
-  top: 130px;
-  left: 110px;
-  transform: rotate(45deg);
-
-  @include screen_1293 {
-    top: 210px;
-    left: 20%;
-  }
-
-  @include tablet {
-    top: 100px;
-    left: -100px;
-  }
+  //position: absolute;
+  top: 130px !important;
+  left: 140px !important;
+  //transform: rotate(45deg);
+  //
+  //@include screen_1293 {
+  //  top: 210px;
+  //  left: 20%;
+  //}
+  //
+  //@include tablet {
+  //  top: 100px;
+  //  left: -100px;
+  //}
 }
 
 .rockTwo {
-  animation: myAnim 15s ease 0s infinite normal forwards;
-
-  img {
-    transform: rotate(-45deg);
-
-    @include tablet {
-      width: 100px;
-    }
-  }
+  //animation: myAnim 15s ease 0s infinite normal forwards;
+  //
+  //img {
+  //  transform: rotate(-45deg);
+  //
+  //  @include tablet {
+  //    width: 100px;
+  //  }
+  //}
 }
 
 .rockThreeWrapper {
-  position: absolute;
-  top: 380px;
-  right: 50px;
-  transform: rotate(90deg);
-
-  @include tablet {
-    top: 250px;
-    left: 0;
-    right: unset;
-  }
+  //position: absolute;
+  top: 400px !important;
+  right: 50px !important;
+  left: unset !important;
+  //transform: rotate(90deg);
+  //
+  //@include tablet {
+  //  top: 250px;
+  //  left: 0;
+  //  right: unset;
+  //}
 }
 
 .rockThree {
-  animation: myAnim 15s ease 0s infinite normal forwards;
-
-  img {
-    transform: rotate(-90deg);
-
-    @include tablet {
-      width: 106px;
-    }
-  }
-}
-
-@keyframes myAnim {
-  0%,
-  100% {
-    transform: translate(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70% {
-    transform: translate(-10px);
-  }
-
-  20%,
-  40%,
-  60% {
-    transform: translate(10px);
-  }
-
-  80% {
-    transform: translate(8px);
-  }
-
-  90% {
-    transform: translate(-8px);
-  }
+  //animation: myAnim 15s ease 0s infinite normal forwards;
+  //
+  //img {
+  //  transform: rotate(-90deg);
+  //
+  //  @include tablet {
+  //    width: 106px;
+  //  }
+  //}
 }

@@ -4,6 +4,7 @@ import IllustrationSide from "./illustrationSide";
 import classes from './styles.module.scss';
 import FloatingObjects from "./illustrationSide/floatingObjects";
 import useScreenWidth from "../../../hook/useScreenWIdth";
+import FloatingObjectsMobile from "./illustrationSide/floatingObjectsMobile";
 
 const StartScreen = () => {
     const screen = useScreenWidth();
@@ -11,7 +12,7 @@ const StartScreen = () => {
         <div className={classes.containerPage}>
             <section className={classes.wrapper}>
                 {screen < 1025 ?
-                    <FloatingObjects/>
+                    <FloatingObjectsMobile/>
                     :
                     <></>
                 }

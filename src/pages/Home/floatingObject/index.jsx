@@ -11,8 +11,7 @@ const FloatingObject = ({text, link, icon, depth}) => {
     const screen = useScreenWidth();
 
     const wrapperClasses = () => classNames({
-        [classes.wrapper]: true,
-        [classes.wrapperParallax]: screen > 1024
+        [classes.wrapper]: true
     })
 
     return (

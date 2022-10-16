@@ -99,10 +99,6 @@
   right: -200px;
   z-index: 1;
 
-  img {
-    animation-delay: 500ms;
-  }
-
   @include mobile {
     right: -150px;
   }
@@ -115,8 +111,6 @@
   z-index: 1;
 
   img {
-    animation-delay: 2500ms;
-
     @include mobile {
       @keyframes rotation {
         0% {
