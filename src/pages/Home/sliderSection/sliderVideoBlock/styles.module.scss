@@ -28,6 +28,8 @@
 }
 
 .button {
+  position: relative;
+  z-index: 2000;
   width: 56px;
   height: 56px;
   background: $white-5;

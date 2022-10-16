@@ -70,6 +70,10 @@
   position: absolute;
   top: -361px;
   z-index: 2;
+
+  img {
+    animation-duration: 4s;
+  }
 }
 
 .rocksLeft {
@@ -99,6 +103,10 @@
   right: -200px;
   z-index: 1;
 
+  img {
+    animation-delay: 2400ms;
+  }
+
   @include mobile {
     right: -150px;
   }
@@ -111,6 +119,8 @@
   z-index: 1;
 
   img {
+    animation-delay: 1650ms;
+
     @include mobile {
       @keyframes rotation {
         0% {
