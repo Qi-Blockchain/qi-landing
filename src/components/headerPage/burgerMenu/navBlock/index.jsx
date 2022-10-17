@@ -6,7 +6,7 @@ import {ROUTES} from "constant";
 const NavBlock = () => {
     return (
         <div className={classes.wrapper}>
-            <a href={'https://docs.qiblockchain.online/'} className={classes.link} rel="noopener noreferrer">
+            <a href={'https://docs.qiblockchain.online/'} className={classes.link} rel="noopener noreferrer" target="_blank">
                 Docs
             </a>
             <Link to={ROUTES.FAQ} className={classes.link} >
