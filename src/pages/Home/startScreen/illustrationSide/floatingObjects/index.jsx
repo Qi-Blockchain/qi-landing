@@ -8,12 +8,9 @@ import Parallax from "parallax-js";
 const FloatingObjects = () => {
     const ref = useRef();
 
-    const setParallax = () => {
-        new Parallax(ref.current)
-    }
 
     useEffect(() => {
-        setParallax();
+        new Parallax(ref.current)
     }, []);
 
     return (
