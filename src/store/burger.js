@@ -1,7 +1,7 @@
 import {atom} from "recoil";
 
 const burgerState = atom({
-    key: 'burder',
+    key: 'burger',
     default: false,
 });
 

@@ -23,7 +23,7 @@ const BurgerMenu = () => {
             </div>
             {isActive &&
                 <div className={classes.menu}>
-                    <NavBlock/>
+                    <NavBlock stateChanger={setIsActive}/>
                     <div className={classes.footer}>
                         <MentionLinks/>
                         <Socialbar/>
