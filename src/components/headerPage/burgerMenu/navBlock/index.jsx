@@ -12,9 +12,9 @@ const NavBlock = () => {
             <Link to={ROUTES.FAQ} className={classes.link} >
                 FAQ
             </Link>
-            <a href={'https://qiblockchain.online/index.php/terms-and-conditions'} className={classes.link} rel="noopener noreferrer">
+            <Link to={ROUTES.TERMS} className={classes.link} >
                 Terms of Service
-            </a>
+            </Link>
         </div>
     );
 };
