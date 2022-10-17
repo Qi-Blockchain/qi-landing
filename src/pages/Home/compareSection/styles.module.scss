@@ -58,13 +58,13 @@
   right: -280px;
 
   @include screen_1635 {
-    right: -160px;
+    right: -120px;
   }
 
   @include screen_1293 {
     right: -70px;
     img {
-      width: 800px;
+      width: 740px;
     }
   }
 
