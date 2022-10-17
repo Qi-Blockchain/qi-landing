@@ -7,7 +7,7 @@
   margin: 0 auto;
 
   @include tablet {
-    margin-top: 240px;
+    margin-top: 220px;
     display: flex;
     flex-direction: column;
   }
@@ -15,10 +15,11 @@
 
 .wrapper {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   margin-top: 160px;
   padding: 64px;
-  background: transparent;
+  background: #100F0F;
+  border-radius: 32px;
   border: none;
 
   @include tablet {
@@ -52,7 +53,7 @@
 
 .rocks {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: -180px;
   right: -280px;
 
@@ -62,6 +63,9 @@
 
   @include screen_1293 {
     right: -70px;
+    img {
+      width: 800px;
+    }
   }
 
   @include tablet {
@@ -69,7 +73,7 @@
     align-self: center;
 
     img {
-      width: 500px;
+      width: 450px;
     }
   }
 

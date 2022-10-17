@@ -5,7 +5,7 @@
   display: flex;
   gap: 40px;
   height: 193px;
-  max-width: 726px;
+  max-width: 900px;
 
   canvas {
     max-width: 674px;
@@ -18,7 +18,7 @@
     }
 
     @include tablet {
-      padding-right: 84px;
+      //padding-right: 84px;
       max-width: 100%;
       width: 100% !important;
     }
