@@ -52,7 +52,7 @@ const Chart = () => {
     }
 
     const getRatesList = async () => {
-      try {
+        try {
           const res = await ratesApi.getRates(periodValue);
 
           const dataTemp = res.data.data.rates.rateData;
@@ -75,8 +75,11 @@ const Chart = () => {
 
     useEffect(() => {
         checkPerElement();
-        getRatesList();
     }, [periodValue])
+
+    useEffect(() => {
+        getRatesList();
+    }, [perElement])
 
     const options = {
         scales: {

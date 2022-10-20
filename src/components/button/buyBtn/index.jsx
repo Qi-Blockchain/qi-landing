@@ -6,7 +6,7 @@ const BuyNowBtn = ({link}) => {
     return (
         <button className={classes.button}>
             <a href={link} target={'_blank'} rel="noopener noreferrer">
-                Buy Now
+                <span className={classes.text}>Buy Now</span>
                 <CoinIcon/>
             </a>
         </button>

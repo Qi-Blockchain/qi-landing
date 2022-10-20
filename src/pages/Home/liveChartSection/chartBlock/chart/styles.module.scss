@@ -18,9 +18,10 @@
     }
 
     @include tablet {
-      //padding-right: 84px;
+      // padding-right: 80px;
       max-width: 100%;
       width: 100% !important;
+      overflow: hidden;
     }
   }
 }
@@ -28,7 +29,8 @@
 .legendWrapper {
   display: flex;
   flex-direction: column;
-  gap: 27px;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .legendItem {

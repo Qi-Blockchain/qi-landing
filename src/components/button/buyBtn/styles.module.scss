@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    // gap: 12px;
   }
 
   &:hover {
@@ -52,4 +52,8 @@
   @include mobile {
     width: 100%;
   }
+}
+
+.text {
+  margin-right: 12px;
 }
