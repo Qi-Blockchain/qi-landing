@@ -22,8 +22,31 @@ ChartJS.register(
 );
 
 const Chart = () => {
-    const [chartData, setChartData] = useState([]);
-    const [chartLabelData, setChartLabelData] = useState([]);
+    const [chartData, setChartData] = useState({
+        labels: [],
+        datasets: [
+            {
+                data: [],
+                lineTension: 0.3,
+                fill: true,
+                borderColor: (context) => {
+                    const colorStart = '#3731B9';
+                    const colorEnd = '#FF136D';
+                    const ctx = context.chart.ctx;
+                    const area = context.chart.chartArea;
+
+                    const gradient = ctx.createLinearGradient(area.left, 0, area.right, 0);
+
+                    gradient.addColorStop(0, colorStart);
+                    gradient.addColorStop(1, colorEnd);
+
+                    return gradient;
+                },
+                pointRadius: 0,
+            }
+        ]
+    });
+    // const [chartLabelData, setChartLabelData] = useState([]);
     const [perElement, setPerElement] = useState(12);
     const [tickData, setTickData] = useState([]);
     const periodValue = useRecoilValue(chartPeriodState);
@@ -66,9 +89,35 @@ const Chart = () => {
               }
           });
 
-          setChartData(ratesData);
-          setChartLabelData(labelData);
-      } catch (e) {
+
+          // setChartData(ratesData);
+          // setChartLabelData(labelData);
+
+          setChartData({
+              labels: labelData,
+              datasets: [
+                  {
+                      data: ratesData,
+                      lineTension: 0.3,
+                      fill: true,
+                      borderColor: (context) => {
+                          const colorStart = '#3731B9';
+                          const colorEnd = '#FF136D';
+                          const ctx = context.chart.ctx;
+                          const area = context.chart.chartArea;
+
+                          const gradient = ctx.createLinearGradient(area.left, 0, area.right, 0);
+
+                          gradient.addColorStop(0, colorStart);
+                          gradient.addColorStop(1, colorEnd);
+
+                          return gradient;
+                      },
+                      pointRadius: 0,
+                  }
+              ]
+          })
+        } catch (e) {
           console.log(e)
       }
     }
@@ -90,34 +139,10 @@ const Chart = () => {
                 display: false
             },
         },
-        responsive: true,
+        responsive: false,
+        maintainAspectRatio: false,
         plugins: {
-        },
-    };
-
-    const data = {
-        labels: chartLabelData,
-        datasets: [
-            {
-                data: chartData,
-                lineTension: 0.3,
-                fill: true,
-                borderColor: (context) => {
-                    const colorStart = '#3731B9';
-                    const colorEnd = '#FF136D';
-                    const ctx = context.chart.ctx;
-                    const area = context.chart.chartArea;
-
-                    const gradient = ctx.createLinearGradient(area.left, 0, area.right, 0);
-
-                    gradient.addColorStop(0, colorStart);
-                    gradient.addColorStop(1, colorEnd);
-
-                    return gradient;
-                },
-                pointRadius: 0,
-            }
-        ]
+        }
     };
 
     const setChartTickets = () => {
@@ -146,8 +171,9 @@ const Chart = () => {
             </div>
             <Line
                 ref={ref}
-                data={data}
+                data={chartData}
                 options={options}
+                updateMode={'none'}
             />
         </div>
     );
