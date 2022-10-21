@@ -13,6 +13,30 @@ const SliderBlockMobile = () => {
     return (
         <div>
             <Flicking align="prev">
+                <a href='https://finance.yahoo.com/finance/news/qie-mining-pools-now-available-043300360.html' className={classes.link} target='_blank' rel="noopener noreferrer">
+                    <SlideItem
+                        img={dubaiNewsImg}
+                        alt={'dubai prince'}
+                        date={'11 October 2022'}
+                        heading={'QIE Mining Pools are Now Available on QI Blockchain'}
+                        text={'QIE mining pools are now available on QI blockchain, a decentralised POW (Proof of work) blockchain. This move will allow users to mine QI blockchain’s native cryptocurrency called QIE in a similar way one could mine Bitcoin in 2011 to verify transactions on the network. Mining has always been a rewarding operation, and several miners have reportedly earned billions of dollars during the initial days of crypto mining. But, of late, rewards have been reduced considerably for most coins. Bitcoin, for instance, halves the rewards for mining blocks every four years. So, while miners earned 50 BTC in 2012, the rewards have reduced to 6.25 in 2022 and will further fall to 3.125 in 2024. That’s a considerable drop in earnings, and since the prices of mining rigs, their upkeep, and power have gone up, mining Bitcoin isn’t as appealing or profitable as it used to be. But all hope is not lost yet! There are other blockchains offering lucrative rewards, and QI Blockchain seems to be the preferred option amongst miners.'}/>
+                </a>
+                <a href='https://www.yahoo.com/now/hovr-launches-fee-sharing-nft-130500306.html' className={classes.link} target='_blank' rel="noopener noreferrer">
+                    <SlideItem
+                        img={dubaiNewsImg}
+                        alt={'dubai prince'}
+                        date={'4 October 2022'}
+                        heading={'HovR Launches as a Fee Sharing NFT Marketplace Alongside a New Gaming NFT Collection\n'}
+                        text={'HovR, a project developed on the Qi blockchain, launched as a fee-sharing NFT marketplace alongside a new gaming NFT collection. Opensea had sales revenue of 5Bn USD for the month of January 2022 alone. What if the fee can be shared? Trading is exciting and profitable, but one cannot ignore the associated risks. The volatile crypto market has witnessed several ups and downs, and the recent market crash wiped off billions of USD. It led to many investors seeking options that provide a passive income and offer sustainability and long-term growth. The search ends with HovR, a platform that allows users to develop a Web 3.0 domain, generate NFTs that can be used both in games and the metaverse, and experiment with a wide range of assets that can be used as NFTs.'}/>
+                </a>
+                <a href='https://www.yahoo.com/now/worlds-first-game-nft-exchange-131800034.html' className={classes.link} target='_blank' rel="noopener noreferrer">
+                    <SlideItem
+                        img={dubaiNewsImg}
+                        alt={'dubai prince'}
+                        date={'21 July 2022'}
+                        heading={"The World's First In-Game NFT Exchange HovR Officially Launched"}
+                        text={'Vortx Capital Pty LTD, a software investment company with an investment mandate that focuses on actual revenue, zero hype, and real blockchain use cases, has announced the launch of HovR—the world\'s first in-gaming NFT exchange for cross-game items and player incentivization. Most of the existing NFT marketplaces require high transaction fees, some ranging from $80 to over $250, to mint an NFT. While a second-layer blockchain serves as a suitable alternative, converting coins is tedious and a technical nightmare for the average user.'}/>
+                </a>
                 <a href='https://qiblockchain.online/index.php/component/content/article/69-the-crown-prince-of-dubai-says-he-has-a-metaverse-strategy?catid=15&Itemid=101' className={classes.link} target='_blank' rel="noopener noreferrer">
                     <SlideItem
                         img={dubaiNewsImg}
@@ -61,7 +85,7 @@ const SliderBlockMobile = () => {
                         date={'12 April 2022'}
                         heading={'De Beers Using Blockchain to Authenticate Diamonds'}
                         text={'De Beers, the diamond unit of Anglo American, is harnessing blockchain technology to keep track of every movement of a gem. Set to launch later this year, the new industry-wide blockchain aims to document the movement of diamonds and other gems from the time they are dug up from the ground. Although cryptocurrency is the most prominent application of blockchain technology at this point, it is but one of many. Increasingly, businesses of all types have looked to the emerging technology as a means of upgrading their models, adding security and documenting transactions. (See also: Is Apple Planning to Use Blockchain?)'}
-                        />
+                    />
                 </a>
                 <a href='https://qiblockchain.online/index.php/component/content/article/63-what-is-blockchain?catid=15&Itemid=101' className={classes.link} target='_blank' rel="noopener noreferrer">
                     <SlideItem
