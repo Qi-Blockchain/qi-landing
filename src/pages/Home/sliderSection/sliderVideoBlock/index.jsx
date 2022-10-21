@@ -23,6 +23,8 @@ const SliderBlock = () => {
         <div className={classes.wrapper}>
             <div className={classes.sliderWrapper}>
                 <Slider {...settings} ref={sliderRef}>
+                    <SlideVideo url={'https://www.youtube.com/embed/SlwjCIqh_y4'} heading={'Pawsome 3D NFT Play-to-Earn Game'}/>
+                    <SlideVideo url={'https://www.youtube.com/embed/8BgK2CNyYsI'} heading={'Qidex - Decentralised Exchange'}/>
                     <SlideVideo url={'https://www.youtube.com/embed/aSDkcfBdU2c'} heading={'Byzantine Generals problem SOLVED'}/>
                     <SlideVideo url={'https://www.youtube.com/embed/6xBKV7KP8RI'} heading={'Metaverse - New version of the Internet\n'}/>
                     <SlideVideo url={'https://www.youtube.com/embed/CMqRqd97rQg'} heading={'Hovr NFT Market Place explainer video'}/>

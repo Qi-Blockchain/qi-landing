@@ -139,7 +139,7 @@ const Chart = () => {
                 display: false
             },
         },
-        responsive: false,
+        responsive: true,
         maintainAspectRatio: false,
         plugins: {
         }

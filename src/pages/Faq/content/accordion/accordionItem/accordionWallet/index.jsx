@@ -89,8 +89,8 @@ const AccordionLink = () => {
             <p className={textClasses()}>QIE</p>
             <br className={breakLineClasses()}/>
             <p className={headingClasses()}>Block Explorer URL:&nbsp;</p>
-            <a className={linkClasses()} href={'https://mainnet.qiblockchain.online/explorer/explorer'} target={'_blank'} rel="noopener noreferrer">
-                https://mainnet.qiblockchain.online/explorer/explorer
+            <a className={linkClasses()} href={'https://mainnet.qiblockchain.online'} target={'_blank'} rel="noopener noreferrer">
+                https://mainnet.qiblockchain.online
             </a>
         </div>
     );
