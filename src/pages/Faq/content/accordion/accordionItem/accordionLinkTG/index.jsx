@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
+import classNames from "classnames";
 import classes from '../styles.module.scss';
 import {ReactComponent as CaretRight} from "../../../../../../assets/images/caret-right-icon.svg";
 import {ReactComponent as CaretDown} from "../../../../../../assets/images/caret-down-icon.svg";
-import classNames from "classnames";
+import {LINKS} from "../../../../../../constant";
 
 const AccordionLink = () => {
     const [isActive, setIsActive] = useState(false);
@@ -73,8 +74,8 @@ const AccordionLink = () => {
                 Reddit:
             </p>
             <br className={breakLineClasses()}/>
-            <a className={linkClasses()} href={'https://www.reddit.com/r/qiblockchain/'} target={'_blank'} rel="noopener noreferrer">
-                https://www.reddit.com/r/qiblockchain/
+            <a className={linkClasses()} href={LINKS.REDDIT} target={'_blank'} rel="noopener noreferrer">
+                {LINKS.REDDIT}
             </a>
             <br className={breakLineClasses()}/>
             <br className={breakLineClasses()}/>
@@ -82,8 +83,8 @@ const AccordionLink = () => {
                 Instagram:
             </p>
             <br className={breakLineClasses()}/>
-            <a className={linkClasses()} href={'https://www.instagram.com/qiblockchain.online/'} target={'_blank'} rel="noopener noreferrer">
-                https://www.instagram.com/qiblockchain.online/
+            <a className={linkClasses()} href={LINKS.INSTAGRAM} target={'_blank'} rel="noopener noreferrer">
+                {LINKS.INSTAGRAM}
             </a>
             <br className={breakLineClasses()}/>
             <br className={breakLineClasses()}/>
@@ -91,8 +92,8 @@ const AccordionLink = () => {
                 Facebook:
             </p>
             <br className={breakLineClasses()}/>
-            <a className={linkClasses()} href={'https://www.facebook.com/QiBlockchain'} target={'_blank'} rel="noopener noreferrer">
-                https://www.facebook.com/QiBlockchain
+            <a className={linkClasses()} href={LINKS.FACEBOOK} target={'_blank'} rel="noopener noreferrer">
+                {LINKS.FACEBOOK}
             </a>
             <br className={breakLineClasses()}/>
             <br className={breakLineClasses()}/>
@@ -100,8 +101,8 @@ const AccordionLink = () => {
                 Twitter:
             </p>
             <br className={breakLineClasses()}/>
-            <a className={linkClasses()} href={'https://twitter.com/qiblockchain'} target={'_blank'} rel="noopener noreferrer">
-                https://twitter.com/qiblockchain
+            <a className={linkClasses()} href={LINKS.TWITTER} target={'_blank'} rel="noopener noreferrer">
+                {LINKS.TWITTER}
             </a>
             <br className={breakLineClasses()}/>
             <br className={breakLineClasses()}/>
@@ -110,8 +111,19 @@ const AccordionLink = () => {
             </p>
 
             <br className={breakLineClasses()}/>
-            <a className={linkClasses()} href={'https://github.com/Qi-Blockchain'} target={'_blank'} rel="noopener noreferrer">
-                https://github.com/Qi-Blockchain
+            <a className={linkClasses()} href={LINKS.GITHUB} target={'_blank'} rel="noopener noreferrer">
+                {LINKS.GITHUB}
+            </a>
+
+            <br className={breakLineClasses()}/>
+            <br className={breakLineClasses()}/>
+            <p className={textClasses()}>
+                Discord:
+            </p>
+
+            <br className={breakLineClasses()}/>
+            <a className={linkClasses()} href={LINKS.DISCORD} target={'_blank'} rel="noopener noreferrer">
+                {LINKS.DISCORD}
             </a>
         </div>
     );

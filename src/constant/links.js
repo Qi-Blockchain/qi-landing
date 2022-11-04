@@ -3,7 +3,7 @@ const LINKS = {
     INSTAGRAM: 'https://www.instagram.com/qiblockchain.online',
     FACEBOOK: 'https://www.facebook.com/QiBlockchain',
     TWITTER: 'https://twitter.com/qiblockchain',
-    DISCORD: 'https://discord.com/',
+    DISCORD: 'https://discord.gg/js54GQqc',
     TELEGRAM: '#',
     GITHUB: 'https://github.com/Qi-Blockchain'
 };
