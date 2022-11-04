@@ -8,6 +8,12 @@ const SliderBlockMobile = () => {
         <div>
             <Flicking align="prev">
                 <div>
+                    <SlideVideo url={'https://www.youtube.com/embed/SlwjCIqh_y4'} heading={'Pawsome 3D NFT Play-to-Earn Game'}/>
+                </div>
+                <div>
+                    <SlideVideo url={'https://www.youtube.com/embed/8BgK2CNyYsI'} heading={'Qidex - Decentralised Exchange'}/>
+                </div>
+                <div>
                     <SlideVideo url={'https://www.youtube.com/embed/aSDkcfBdU2c'} heading={'Byzantine Generals problem SOLVED'}/>
                 </div>
                 <div>

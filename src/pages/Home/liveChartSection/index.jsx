@@ -4,8 +4,6 @@ import SectionHeading from "./sectionHeading";
 import NumbersBlock from "./numbersBlock";
 import {BuyBtn} from "components";
 import ChartBlock from "./chartBlock";
-import {Link} from "react-router-dom";
-import {ROUTES} from "../../../constant";
 import rockChart from "../../../assets/images/rock-chart.png";
 
 const LiveChartSection = () => {
@@ -28,14 +26,14 @@ const LiveChartSection = () => {
                 <div className={classes.footerWrapper}>
                     Buy on
                     &nbsp;
-                    <Link className={classes.link} to={ROUTES.HOMEPAGE}>
+                    <a className={classes.link} href={'https://p2pb2b.com/trade/QIE_USDT/'} target={'_blank'} rel="noopener noreferrer">
                         p2pb2b
-                    </Link>
+                    </a>
                     ,
                     &nbsp;
-                    <Link className={classes.link} to={ROUTES.HOMEPAGE}>
+                    <a className={classes.link} href={'https://www.digifinex.com/en-ww/trade/USDT/QIE'} target={'_blank'} rel="noopener noreferrer">
                         digifinex
-                    </Link>,
+                    </a>,
                     &nbsp;
                     <a target={'_blank'} className={classes.link} href={'https://www.bitmart.com/trade/en?symbol=QIE_USDT&layout=basic'} rel="noopener noreferrer">
                         bitmart
