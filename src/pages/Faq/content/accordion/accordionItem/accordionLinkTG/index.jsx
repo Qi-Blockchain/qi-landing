@@ -125,6 +125,16 @@ const AccordionLink = () => {
             <a className={linkClasses()} href={LINKS.DISCORD} target={'_blank'} rel="noopener noreferrer">
                 {LINKS.DISCORD}
             </a>
+            <br className={breakLineClasses()}/>
+            <br className={breakLineClasses()}/>
+            <p className={textClasses()}>
+                Weibo:
+            </p>
+
+            <br className={breakLineClasses()}/>
+            <a className={linkClasses()} href={LINKS.WEIBO} target={'_blank'} rel="noopener noreferrer">
+                {LINKS.WEIBO}
+            </a>
         </div>
     );
 };

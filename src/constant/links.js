@@ -5,7 +5,8 @@ const LINKS = {
     TWITTER: 'https://twitter.com/qiblockchain',
     DISCORD: 'https://discord.gg/js54GQqc',
     TELEGRAM: '#',
-    GITHUB: 'https://github.com/Qi-Blockchain'
+    GITHUB: 'https://github.com/Qi-Blockchain',
+    WEIBO: 'https://weibo.com/pawsome'
 };
 
 export {LINKS};
