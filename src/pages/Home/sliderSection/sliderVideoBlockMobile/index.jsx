@@ -1,37 +1,33 @@
-import React from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import Flicking from "@egjs/react-flicking";
 import "@egjs/react-flicking/dist/flicking.css";
 import SlideVideo from "./slideVideo";
+import axios from "axios";
 
 const SliderBlockMobile = () => {
+    const [video, setVideo] = useState([]);
+
+    useEffect(() => {
+        getVideoList();
+    }, []);
+
+    const getVideoList = async function () {
+        axios.get('http://localhost:8000/api/v1/landing/video')
+            .then((response) => {
+                const videoList = response.data.data.video;
+                setVideo(videoList)
+            })
+            .catch(error => console.error('Error: ' + error));
+    }
+
     return (
         <div>
             <Flicking align="prev">
-                <div>
-                    <SlideVideo url={'https://www.youtube.com/embed/SlwjCIqh_y4'} heading={'Pawsome 3D NFT Play-to-Earn Game'}/>
-                </div>
-                <div>
-                    <SlideVideo url={'https://www.youtube.com/embed/8BgK2CNyYsI'} heading={'Qidex - Decentralised Exchange'}/>
-                </div>
-                <div>
-                    <SlideVideo url={'https://www.youtube.com/embed/aSDkcfBdU2c'} heading={'Byzantine Generals problem SOLVED'}/>
-                </div>
-                <div>
-                    <SlideVideo url={'https://www.youtube.com/embed/6xBKV7KP8RI'} heading={'Metaverse - New version of the Internet\n'}/>
-                </div>
-                <div>
-                    <SlideVideo url={'https://www.youtube.com/embed/CMqRqd97rQg'} heading={'Hovr NFT Market Place explainer video'}/>
-                </div>
-                <div>
-                    <SlideVideo url={'https://www.youtube.com/embed/RVZ1DuoyUSQ'} heading={'Web 3.0 - The future of the Internet\n'}/>
-                </div>
-                <div>
-                    <SlideVideo url={'https://www.youtube.com/embed/uzab9kDPw7I'} heading={'How NFT`s will change our lives'}/>
-                </div>
-                <div>
-                    <SlideVideo url={'https://www.youtube.com/embed/1pMA5iu35y8'} heading={'Decentralised Finance (Defi) Explained'}/>
-                </div>
-
+                {video.map((currentVideo, index) =>
+                    <div>
+                        <SlideVideo url={currentVideo.url} heading={currentVideo.title}/>
+                    </div>
+                )}
             </Flicking>
         </div>
     );

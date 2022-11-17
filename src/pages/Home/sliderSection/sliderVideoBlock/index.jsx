@@ -6,9 +6,26 @@ import {ReactComponent as ArrowRight} from '../../../../assets/images/arrow-righ
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import axios from "axios";
+import SlideItem from "../slideItem";
+import dubaiNewsImg from "../../../../assets/images/dubai-news.webp";
 
 const SliderBlock = () => {
+    const [video, setVideo] = useState([]);
     const sliderRef = useRef();
+
+    useEffect(() => {
+        getVideoList();
+    }, []);
+
+    const getVideoList = async function () {
+        axios.get('http://localhost:8000/api/v1/landing/video')
+            .then((response) => {
+                const videoList = response.data.data.video;
+                setVideo(videoList)
+            })
+            .catch(error => console.error('Error: ' + error));
+    }
 
     const settings = {
         dots: false,
@@ -23,14 +40,9 @@ const SliderBlock = () => {
         <div className={classes.wrapper}>
             <div className={classes.sliderWrapper}>
                 <Slider {...settings} ref={sliderRef}>
-                    <SlideVideo url={'https://www.youtube.com/embed/SlwjCIqh_y4'} heading={'Pawsome 3D NFT Play-to-Earn Game'}/>
-                    <SlideVideo url={'https://www.youtube.com/embed/8BgK2CNyYsI'} heading={'Qidex - Decentralised Exchange'}/>
-                    <SlideVideo url={'https://www.youtube.com/embed/aSDkcfBdU2c'} heading={'Byzantine Generals problem SOLVED'}/>
-                    <SlideVideo url={'https://www.youtube.com/embed/6xBKV7KP8RI'} heading={'Metaverse - New version of the Internet\n'}/>
-                    <SlideVideo url={'https://www.youtube.com/embed/CMqRqd97rQg'} heading={'Hovr NFT Market Place explainer video'}/>
-                    <SlideVideo url={'https://www.youtube.com/embed/RVZ1DuoyUSQ'} heading={'Web 3.0 - The future of the Internet\n'}/>
-                    <SlideVideo url={'https://www.youtube.com/embed/uzab9kDPw7I'} heading={'How NFT`s will change our lives'}/>
-                    <SlideVideo url={'https://www.youtube.com/embed/1pMA5iu35y8'} heading={'Decentralised Finance (Defi) Explained'}/>
+                    {video.map((currentVideo, index) =>
+                        <SlideVideo url={currentVideo.url} heading={currentVideo.title}/>
+                    )}
                 </Slider>
             </div>
             <div className={classes.btnWrapper}>
