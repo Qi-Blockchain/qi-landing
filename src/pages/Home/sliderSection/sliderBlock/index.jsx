@@ -23,7 +23,7 @@ const SliderBlock = () => {
     }, []);
 
     const getNewsList = async function () {
-        axios.get('http://localhost:8000/api/v1/landing/news')
+        axios.get('https://api.qie.systems/v1/landing/news')
             .then((response) => {
                 const newsList = response.data.data.news;
                 setNews(newsList)
@@ -45,7 +45,7 @@ const SliderBlock = () => {
             <div className={classes.sliderWrapper}>
                 <Slider {...settings} ref={sliderRef}>
                     {news.map((currentNews, index) =>
-                        <a href={currentNews.url} className={classes.link} target='_blank' rel="noopener noreferrer">
+                        <a href={currentNews.url} className={classes.link} target='_blank' rel="noopener noreferrer" key={index}>
                             <SlideItem
                                 img={dubaiNewsImg}
                                 alt={'dubai prince'}

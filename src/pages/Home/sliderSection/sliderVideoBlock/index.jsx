@@ -19,7 +19,7 @@ const SliderBlock = () => {
     }, []);
 
     const getVideoList = async function () {
-        axios.get('http://localhost:8000/api/v1/landing/video')
+        axios.get('https://api.qie.systems/v1/landing/video')
             .then((response) => {
                 const videoList = response.data.data.video;
                 setVideo(videoList)
@@ -41,7 +41,7 @@ const SliderBlock = () => {
             <div className={classes.sliderWrapper}>
                 <Slider {...settings} ref={sliderRef}>
                     {video.map((currentVideo, index) =>
-                        <SlideVideo url={currentVideo.url} heading={currentVideo.title}/>
+                        <SlideVideo url={currentVideo.url} heading={currentVideo.title} key={index}/>
                     )}
                 </Slider>
             </div>
