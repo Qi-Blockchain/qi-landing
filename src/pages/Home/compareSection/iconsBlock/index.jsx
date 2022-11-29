@@ -9,7 +9,7 @@ import {ReactComponent as BitcoinIcon} from "../../../../assets/images/bitcoin-i
 const IconsBlock = () => {
     return (
         <div className={classes.wrapper}>
-            <IconsItem icon={<QiIcon/>} title={'QI'} value={'2000tps'} percent={100}/>
+            <IconsItem icon={<QiIcon/>} title={'QIE'} value={'2000tps'} percent={100}/>
             <IconsItem icon={<RippleIcon/>} title={'Ripple'} value={'1000tps'} percent={50}/>
             <IconsItem icon={<EthereumIcon/>} title={'Ethereum'} value={'20tps'} percent={10}/>
             <IconsItem icon={<BitcoinIcon/>} title={'Bitcoin'} value={'4.6tps'} percent={5}/>

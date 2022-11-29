@@ -123,7 +123,7 @@ const TableBlockMobile = () => {
                                     <QiIcon/>
                                 </div>
                                 <div className={classes.columnHead}>
-                                    Qi
+                                    QIE
                                 </div>
                             </div>
                         </th>

@@ -51,7 +51,7 @@ const TableBlock = () => {
                                 <QiIcon/>
                             </div>
                             <div className={classes.columnHead}>
-                                Qi
+                                QIE
                             </div>
                         </div>
                     </th>
