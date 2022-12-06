@@ -3,7 +3,6 @@
 .wrapper {
   padding-bottom: 40px;
   background: url("../../assets/images/bg-sec-pages.png");
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: left bottom -40px;
 }

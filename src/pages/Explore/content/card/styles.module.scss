@@ -1,0 +1,107 @@
+@import "./src/assets/styles/variables/colors";
+@import "./src/assets/styles/mixin/breakpoints";
+
+.wrapper {
+  display: flex;
+  gap: 12px;
+  padding: 24px;
+  background: $black-20;
+  border-radius: 16px;
+}
+
+.contentWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.headingWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.015em;
+  color: $white-80;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.015em;
+  color: $white-80;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.tagWrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.new,
+.tag,
+.aav {
+  padding: 2px 8px;
+  height: fit-content;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.015em;
+  color: $white-80;
+  border-radius: 8px;
+}
+
+.new {
+  background: $pink-15;
+  border: 1px solid $pink-20;
+}
+
+.tag {
+  background: $green-15;
+  border: 1px solid $green-20;
+}
+
+.aav {
+  display: flex;
+  gap: 6px;
+  background: $black-15;
+  border: 1px solid $black-20;
+}
+
+.iconGrid {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.iconFlex {
+  display: block;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.headingWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

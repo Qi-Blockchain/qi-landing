@@ -1,0 +1,57 @@
+@import "../../../../assets/styles/variables/colors";
+@import "../../../../assets/styles/mixin/breakpoints";
+
+.wrapper {
+  width: 100%;
+  min-height: 352px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-size: contain;
+  background: url("../../../../assets/images/rocks-explore.png") no-repeat right;
+
+  @include tablet {
+    min-height: 510px;
+    justify-content: flex-end;
+    background-position: top center;
+  }
+}
+
+.contentWrapper {
+  width: 100%;
+  max-width: 777px;
+
+  @include screen_1293 {
+    max-width: 660px;
+  }
+
+  @include tablet {
+    max-width: 100%;
+  }
+}
+
+.heading {
+  font-weight: 800;
+  font-size: 32px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: $white;
+
+  @include tablet {
+    font-size: 24px;
+  }
+}
+
+.text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.015em;
+  color: $white-80;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

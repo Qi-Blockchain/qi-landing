@@ -15,6 +15,9 @@ const Navbar = () => {
             <Link to={ROUTES.TERMS} className={classes.link} >
                 Terms of Service
             </Link>
+            <Link to={ROUTES.EXPLORE_DAPPS} className={classes.link} >
+                Explore Dapps
+            </Link>
         </nav>
     );
 };

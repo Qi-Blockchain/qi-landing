@@ -1,0 +1,56 @@
+@import "./src/assets/styles/variables/colors";
+@import "./src/assets/styles/mixin/breakpoints";
+
+.wrapper {
+  cursor: pointer;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: $black-chart-bg;
+  border: 1px solid $white-15;
+  border-radius: 16px;
+  transition: all 500ms;
+
+  &:hover {
+    background: $pink-5;
+    border: 1px solid $pink;
+
+    .heading {
+      color: $white;
+    }
+  }
+
+  @include tablet {
+    height: 100%;
+    margin: 0 6px;
+  }
+}
+
+.heading {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: $white-80;
+  transition: all 500ms;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+  color: $white-80;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

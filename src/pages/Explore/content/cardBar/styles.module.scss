@@ -1,0 +1,11 @@
+@import "./src/assets/styles/mixin/breakpoints";
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+
+  @include tablet {
+    display: block;
+  }
+}

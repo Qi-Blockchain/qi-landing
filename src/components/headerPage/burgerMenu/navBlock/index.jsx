@@ -15,6 +15,9 @@ const NavBlock = ({stateChanger}) => {
             <Link to={ROUTES.TERMS} className={classes.link} onClick={() => stateChanger()}>
                 Terms of Service
             </Link>
+            <Link to={ROUTES.EXPLORE_DAPPS} className={classes.link} onClick={() => stateChanger()}>
+                Explore Dapps
+            </Link>
         </div>
     );
 };

@@ -1,0 +1,31 @@
+@import "../mixin/breakpoints";
+
+.slick-slider-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+
+  @include tablet {
+    display: block;
+    margin: 0 -15px;
+
+    .slick-list {
+      height: 300px;
+
+      .slick-track {
+        display: flex;
+
+        .slick-slide {
+          display: flex;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  @include mobile-medium {
+    .slick-list {
+      height: 250px;
+    }
+  }
+}

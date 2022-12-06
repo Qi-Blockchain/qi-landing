@@ -1,0 +1,55 @@
+@import './src/assets/styles/variables/colors';
+@import './src/assets/styles/mixin/breakpoints';
+
+@property --color-one{
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #ff136d;
+}
+
+@property --color-two{
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #453fd6;
+}
+
+.button {
+  --color-one: #ff136d;
+  --color-two: #453fd6;
+  padding: 16px 32px;
+  font-size: 24px;
+  letter-spacing: -0.015em;
+  color: $white-90;
+  transition: --color-one 0.8s, --color-two 0.8s;
+  background: linear-gradient(264.11deg, var(--color-one) -2.87%, var(--color-two) 105.13%);
+  border-radius: 16px;
+  box-shadow: -20px 10px 30px $blue-15, 20px -10px 30px $pink-15;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // gap: 12px;
+  }
+
+  &:hover {
+    --color-one: #453fd6;
+    --color-two: #ff136d;
+  }
+
+  &:focus {
+    --color-one: #453fd6;
+    --color-two: #ff136d;
+
+    background: linear-gradient(0deg, $black-26, $black-26), linear-gradient(264.11deg, $blue -2.87%, $pink 105.13%);
+  }
+
+  @include tablet {
+    width: 297px;
+    font-size: 18px;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
