@@ -23,7 +23,8 @@ const Content = () => {
                             text={card.text}
                             tag={card.tag}
                             newTag={card.new}
-                            aav={card.aav}
+                            symbol={card.symbol}
+                            symbolLink={card.symbolLink}
                         />
                     ))}
                 </CardSection>
