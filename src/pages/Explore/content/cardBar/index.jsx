@@ -4,7 +4,7 @@ import config from './config';
 import CardItem from "./cardItem";
 import classes from './styles.module.scss';
 
-const CardBar = () => {
+const CardBar = ({activeCard, setActiveCard}) => {
     const sliderRef = useRef();
 
     const settings = {
@@ -44,8 +44,15 @@ const CardBar = () => {
 
     return (
         <Slider ref={sliderRef} {...settings} className='slick-slider-card'>
-            {config.map((card) => (
-                <CardItem key={card.id} heading={card.heading} text={card.text}/>
+            {config.map((card, index) => (
+                <CardItem
+                    key={card.id}
+                    heading={card.heading}
+                    text={card.text}
+                    activeCard={activeCard}
+                    setActiveCard={setActiveCard}
+                    cardIndex={index}
+                />
             ))}
         </Slider>
     );

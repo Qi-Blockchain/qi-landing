@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {BackBtn} from "components";
 import PageHeading from "./pageHeading";
 import CardBar from "./cardBar";
@@ -8,12 +8,14 @@ import config from "./config";
 import classes from './styles.module.scss';
 
 const Content = () => {
+    const [activeCard, setActiveCard] = useState(0);
+
     return (
         <div className={classes.wrapper}>
             <BackBtn/>
             <PageHeading/>
-            <CardBar/>
-            {config.map((section) => (
+            <CardBar activeCard={activeCard} setActiveCard={setActiveCard}/>
+            {config[activeCard].map((section) => (
                 <CardSection key={section.id} sectionName={section.sectionName}>
                     {section.sectionCards.map((card) => (
                         <Card
