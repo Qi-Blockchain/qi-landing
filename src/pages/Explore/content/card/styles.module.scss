@@ -56,7 +56,8 @@
 
 .new,
 .tag,
-.aav {
+.aav,
+.soon {
   padding: 2px 8px;
   height: fit-content;
   font-weight: 300;
@@ -75,6 +76,11 @@
 .tag {
   background: $green-15;
   border: 1px solid $green-20;
+}
+
+.soon {
+  background: $blue-15;
+  border: 1px solid $blue-20;
 }
 
 .aav {

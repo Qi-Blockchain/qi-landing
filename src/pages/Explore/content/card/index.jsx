@@ -2,10 +2,10 @@ import React from 'react';
 import {ReactComponent as Coin} from "assets/images/coin-tag.svg";
 import classes from './styles.module.scss';
 
-const Card = ({icon, heading, text, tag, newTag, symbol, symbolLink}) => {
-    console.log({symbolLink})
+const Card = ({icon, heading, text, tag, newTag, symbol, appLink, symbolLink, soonTag}) => {
+
     return (
-        <a href={symbolLink} target='_blank' rel='noreferrer' className={classes.wrapper} data-link-disabled={symbolLink ? '' : 'disabled'}>
+        <a href={appLink} target='_blank' rel='noreferrer' className={classes.wrapper} data-link-disabled={appLink ? '' : 'disabled'}>
             <div className={classes.iconFlex}>
                 <img src={icon} alt="card icon"/>
             </div>
@@ -19,10 +19,11 @@ const Card = ({icon, heading, text, tag, newTag, symbol, symbolLink}) => {
                     </div>
                     <div className={classes.tagWrapper}>
                         {newTag && <div className={classes.new}>{newTag}</div>}
-                        {symbol && <div className={classes.aav}>
+                        {soonTag && <div className={classes.soon}>{soonTag}</div>}
+                        {symbol && <a href={symbolLink} target='_blank' rel='noreferrer' className={classes.aav}>
                             <Coin/>
                             <span>{symbol}</span>
-                        </div>}
+                        </a>}
                         {tag && <div className={classes.tag}>{tag}</div>}
                     </div>
                 </div>

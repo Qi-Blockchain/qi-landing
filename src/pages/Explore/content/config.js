@@ -14,12 +14,13 @@ const config = [
                 {
                     id: 10,
                     icon: QidexIcon,
-                    heading: 'qidex.site',
+                    heading: 'QI DEX',
                     text: 'First decentralized exchange on QI Blockchain network.',
                     new: 'New',
                     symbol: 'QIDEX',
-                    symbolLink: 'https://mainnet.qiblockchain.online/token/0x0f2380e602dd7ea5d717d8bf78c52496f1d54a96',
-                    tag: ''
+                    appLink: 'https://qidex.site/',
+                    tag: '',
+                    symbolLink: 'https://mainnet.qiblockchain.online/token/0x0f2380e602dd7ea5d717d8bf78c52496f1d54a96'
                 }
             ]
         },
@@ -32,10 +33,11 @@ const config = [
                     icon: QiStablecoinIcon,
                     heading: 'QI USD',
                     text: 'Over-Collateralized Decentralized Stablecoin',
-                    new: 'Coming Soon',
+                    new: '',
                     symbol: '',
-                    symbolLink: '',
-                    tag: ''
+                    appLink: '',
+                    tag: '',
+                    soon: 'Coming Soon'
                 }
             ]
         },
@@ -45,12 +47,12 @@ const config = [
             sectionCards: [
                 {
                     id: 30,
-                    icon: QidexIcon,
+                    icon: TokenCreatorIcon,
                     heading: 'QI Staking',
                     text: 'Stake QI and earn QIDEX tokens with high APY',
                     new: '',
                     symbol: '',
-                    symbolLink: 'https://qidex.site/#/stake',
+                    appLink: 'https://qidex.site/#/stake',
                     tag: 'Recommendation'
                 }
             ]
@@ -68,7 +70,7 @@ const config = [
                     text: 'Own your web 3.0 domain, sell unique gaming NFTs items, create your digital avatar for your metaverse identity, create your own letter of wishes for loved ones and much more',
                     new: '',
                     symbol: '',
-                    symbolLink: 'https://hovr.site/',
+                    appLink: 'https://hovr.site/',
                     tag: ''
                 }
             ]
@@ -86,7 +88,7 @@ const config = [
                     text: 'Challenge friends and the online community by backing your puppy to race in the Metaverse!',
                     new: '',
                     symbol: '',
-                    symbolLink: 'https://pawsome.host/',
+                    appLink: 'https://pawsome.host/',
                     tag: ''
                 }
             ]
@@ -102,10 +104,11 @@ const config = [
                     icon: QiStablecoinIcon,
                     heading: 'QI Wallet',
                     text: 'Send and receive QIE, tokens and NFTs from mobile app with web3 browser and many other features.',
-                    new: 'Coming soon',
+                    new: '',
                     symbol: '',
-                    symbolLink: '',
-                    tag: ''
+                    appLink: '',
+                    tag: '',
+                    soon: 'Coming Soon'
                 }
             ]
         },
@@ -120,7 +123,7 @@ const config = [
                     text: 'Mint your unique token on QI here. Tokens are fully QIE20 compliant Non-Mintable Tokens. Use the QI token factory to mint your very own token at the click of a button.',
                     new: '',
                     symbol: '',
-                    symbolLink: 'https://qidex.site/#/token-creator',
+                    appLink: 'https://qidex.site/#/token-creator',
                     tag: ''
                 }
             ]
@@ -136,7 +139,7 @@ const config = [
                     text: 'Extensive information about QI Blockchain',
                     new: '',
                     symbol: '',
-                    symbolLink: 'https://docs.qiblockchain.online/',
+                    appLink: 'https://docs.qiblockchain.online/',
                     tag: ''
                 }
             ]

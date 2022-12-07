@@ -16,7 +16,7 @@ const Navbar = () => {
                 Terms of Service
             </Link>
             <Link to={ROUTES.EXPLORE_DAPPS} className={classes.link} >
-                Explore Dapps
+                Ecosystem
             </Link>
         </nav>
     );

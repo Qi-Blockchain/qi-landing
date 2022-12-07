@@ -26,7 +26,9 @@ const Content = () => {
                             tag={card.tag}
                             newTag={card.new}
                             symbol={card.symbol}
+                            appLink={card.appLink}
                             symbolLink={card.symbolLink}
+                            soonTag={card.soon}
                         />
                     ))}
                 </CardSection>

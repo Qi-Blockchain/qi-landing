@@ -16,7 +16,7 @@ const NavBlock = ({stateChanger}) => {
                 Terms of Service
             </Link>
             <Link to={ROUTES.EXPLORE_DAPPS} className={classes.link} onClick={() => stateChanger()}>
-                Explore Dapps
+                Ecosystem
             </Link>
         </div>
     );
