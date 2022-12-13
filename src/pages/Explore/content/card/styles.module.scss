@@ -2,11 +2,37 @@
 @import "./src/assets/styles/mixin/breakpoints";
 
 .wrapper {
+  cursor: pointer;
+  position: relative;
   display: flex;
   gap: 12px;
   padding: 24px;
   background: $black-20;
   border-radius: 16px;
+  border: 1px solid transparent;
+  transition: all 300ms;
+
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 31.37%, $black-card-bg 74.04%);
+    border-radius: 16px;
+    opacity: 0;
+    transition: all 300ms;
+  }
+
+  &:hover {
+    border: 1px solid $pink;
+
+    &:before {
+      opacity: 1;
+    }
+
+    .link {
+      opacity: 1;
+    }
+  }
 }
 
 .contentWrapper {
@@ -57,7 +83,8 @@
 .new,
 .tag,
 .aav,
-.soon {
+.soon,
+.link {
   padding: 2px 8px;
   height: fit-content;
   font-weight: 300;
@@ -110,4 +137,17 @@
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.link {
+  position: absolute;
+  bottom: 12px;
+  right: 24px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  opacity: 0;
+  background: $white-5;
+  border: 1px solid $white-10;
+  transition: all 300ms;
 }
