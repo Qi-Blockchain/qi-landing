@@ -171,13 +171,14 @@ const config = [
                 },
                 {
                     id: 71,
-                    icon: NexBlocIcon,
-                    heading: 'NexBloc',
-                    text: 'Next generation of the internet with decentralized DNS (dDNS) at the core and cross-chain interoperability.',
+                    icon: QiStablecoinIcon,
+                    heading: 'Web3 identities',
+                    text: 'Next generation of the internet with decentralised DNS(dDNS) and .QIE identities and domains.  No website renewal fees. Easy payments. Own your data.',
                     new: '',
                     symbol: '',
-                    appLink: 'https://nexbloc.io',
-                    tag: ''
+                    appLink: '',
+                    tag: '',
+                    soon: 'Coming Soon'
                 }
             ]
         },
