@@ -4,15 +4,19 @@ import HovrIcon from 'assets/images/hovr-icon.png';
 import PowsomeIcon from 'assets/images/pawsome-icon.png';
 import TokenCreatorIcon from 'assets/images/token-creator-icon.png';
 import DocIcon from 'assets/images/doc-icon.png';
+import HovrHooligans from 'assets/images/hovr-hooligans.png';
+import DoodleIcon from 'assets/images/doodle-icon.png';
+import GalaxyIcon from 'assets/images/galaxy-icon.png';
+import NexBlocIcon from 'assets/images/nexbloc-icon.png';
 
 const config = [
     [
         {
-            id:1,
+            id:11,
             sectionName: 'Token swaps',
             sectionCards: [
                 {
-                    id: 10,
+                    id: 110,
                     icon: QidexIcon,
                     heading: 'QI DEX',
                     text: 'First decentralized exchange on QI Blockchain network.',
@@ -25,11 +29,11 @@ const config = [
             ]
         },
         {
-            id:2,
+            id:12,
             sectionName: 'Payments',
             sectionCards: [
                 {
-                    id: 20,
+                    id: 120,
                     icon: QiStablecoinIcon,
                     heading: 'QI USD',
                     text: 'Over-Collateralized Decentralized Stablecoin.',
@@ -42,11 +46,11 @@ const config = [
             ]
         },
         {
-            id:3,
+            id:13,
             sectionName: 'Staking',
             sectionCards: [
                 {
-                    id: 30,
+                    id: 130,
                     icon: TokenCreatorIcon,
                     heading: 'QI Staking',
                     text: 'Stake QI and earn QIDEX tokens with high APY.',
@@ -54,6 +58,22 @@ const config = [
                     symbol: '',
                     appLink: 'https://qidex.site/#/stake',
                     tag: 'Recommendation'
+                }
+            ]
+        },
+        {
+            id:14,
+            sectionName: 'Trading',
+            sectionCards: [
+                {
+                    id: 140,
+                    icon: GalaxyIcon,
+                    heading: 'Galaxy Invest',
+                    text: 'AI based autotrading global stocks.',
+                    new: '',
+                    symbol: '',
+                    appLink: '',
+                    tag: ''
                 }
             ]
         },
@@ -90,7 +110,29 @@ const config = [
                     symbol: '',
                     appLink: 'https://pawsome.host/',
                     tag: ''
-                }
+                },
+                {
+                    id: 51,
+                    icon: DoodleIcon,
+                    heading: 'Qie Doodle',
+                    text: 'Play multiplayer doodle game on QI Blockchain.',
+                    new: '',
+                    symbol: '',
+                    appLink: '',
+                    tag: '',
+                    soon: 'Coming Soon'
+                },
+                {
+                    id: 52,
+                    icon: HovrHooligans,
+                    heading: 'HOvR Hooligans',
+                    text: 'The 10,000 largest cities of the world fighting for world domination. Find your allies and conquer the world.',
+                    new: '',
+                    symbol: '',
+                    appLink: '',
+                    tag: '',
+                    soon: 'Coming Soon'
+                },
             ]
         },
     ],
@@ -124,6 +166,16 @@ const config = [
                     new: '',
                     symbol: '',
                     appLink: 'https://qidex.site/#/token-creator',
+                    tag: ''
+                },
+                {
+                    id: 71,
+                    icon: NexBlocIcon,
+                    heading: 'NexBloc',
+                    text: 'Next generation of the internet with decentralized DNS (dDNS) at the core and cross-chain interoperability.',
+                    new: '',
+                    symbol: '',
+                    appLink: 'https://nexbloc.io',
                     tag: ''
                 }
             ]
