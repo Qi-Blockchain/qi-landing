@@ -6,7 +6,7 @@ import classes from './styles.module.scss';
 const Card = ({icon, heading, text, tag, newTag, symbol, appLink, symbolLink, soonTag}) => {
 
     return (
-        <div className={classes.wrapper}>
+        <a href={appLink} target='_blank' rel='noreferrer' className={classes.wrapper} data-link-disabled={appLink ? '' : 'disabled'}>
             <div className={classes.iconFlex}>
                 <img src={icon} alt="card icon"/>
             </div>
@@ -31,17 +31,13 @@ const Card = ({icon, heading, text, tag, newTag, symbol, appLink, symbolLink, so
                 <p className={classes.text}>{text}</p>
             </div>
             {appLink &&
-                <a
-                    href={appLink}
-                    target='_blank'
-                    rel='noreferrer'
+                <div
                     className={classes.link}
                 >
-                    Open in new tab
                     <Arrow/>
-                </a>
+                </div>
             }
-        </div>
+        </a>
     );
 };
 
