@@ -73,7 +73,8 @@ const config = [
                     new: '',
                     symbol: '',
                     appLink: '',
-                    tag: ''
+                    tag: '',
+                    soon: 'Coming Soon'
                 }
             ]
         },
