@@ -145,7 +145,7 @@ const config = [
                 {
                     id: 60,
                     icon: QiStablecoinIcon,
-                    heading: 'QI Wallet',
+                    heading: 'QIE Wallet',
                     text: 'Send and receive QIE, tokens and NFTs from mobile app with web3 browser and many other features.',
                     new: '',
                     symbol: '',
