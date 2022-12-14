@@ -14,3 +14,19 @@
   letter-spacing: -0.015em;
   color: $white-70;
 }
+
+.linkEcoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 12px;
+  background: $blue-15;
+  border-radius: 8px;
+}
+
+.linkEco {
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: -0.015em;
+  color: $white;
+}

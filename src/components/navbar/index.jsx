@@ -1,8 +1,9 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+import {ROUTES} from "constant";
+import {ReactComponent as Icon} from "assets/images/explore-icon.svg";
 import NavItem from "./navItem";
 import classes from './styles.module.scss';
-import {ROUTES} from "constant";
-import {Link} from "react-router-dom";
 
 const Navbar = () => {
 
@@ -15,9 +16,12 @@ const Navbar = () => {
             <Link to={ROUTES.TERMS} className={classes.link} >
                 Terms of Service
             </Link>
-            <Link to={ROUTES.EXPLORE_DAPPS} className={classes.link} >
-                Ecosystem
-            </Link>
+            <div className={classes.linkEcoWrapper}>
+                <Icon />
+                <Link to={ROUTES.EXPLORE_DAPPS} className={classes.linkEco} >
+                    Ecosystem
+                </Link>
+            </div>
         </nav>
     );
 };

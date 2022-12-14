@@ -1,7 +1,9 @@
 import React from 'react';
-import classes from './styles.module.scss';
 import {Link} from "react-router-dom";
 import {ROUTES} from "constant";
+import {ReactComponent as Icon} from "assets/images/explore-icon.svg";
+import classes from './styles.module.scss';
+
 
 const NavBlock = ({stateChanger}) => {
     return (
@@ -15,9 +17,12 @@ const NavBlock = ({stateChanger}) => {
             <Link to={ROUTES.TERMS} className={classes.link} onClick={() => stateChanger()}>
                 Terms of Service
             </Link>
-            <Link to={ROUTES.EXPLORE_DAPPS} className={classes.link} onClick={() => stateChanger()}>
-                Ecosystem
-            </Link>
+            <div className={classes.linkEcoWrapper}>
+                <Icon />
+                <Link to={ROUTES.EXPLORE_DAPPS} className={classes.linkEco} onClick={() => stateChanger()}>
+                    Ecosystem
+                </Link>
+            </div>
         </div>
     );
 };

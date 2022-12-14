@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   flex: 1;
   justify-content: center;
+  align-items: center;
   gap: 16px;
 }
 
@@ -14,6 +15,26 @@
   font-weight: 500;
   letter-spacing: -0.015em;
   color: $white-70;
+
+  @include tablet {
+    font-size: 12px;
+  }
+}
+
+.linkEcoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 12px;
+  background: $blue-15;
+  border-radius: 8px;
+}
+
+.linkEco {
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: -0.015em;
+  color: $white;
 
   @include tablet {
     font-size: 12px;
