@@ -19,6 +19,15 @@
     .heading {
       color: $white;
     }
+
+    @include mobile-600 {
+      background: $black-chart-bg;
+      border: 1px solid $white-15;
+
+      .heading {
+        color: $white-80;
+      }
+    }
   }
 
   @include tablet {
@@ -30,6 +39,15 @@
 .wrapperActive {
   background: $pink-5;
   border: 1px solid $pink;
+
+  &:hover {
+    background: $pink-5;
+    border: 1px solid $pink;
+
+    .heading {
+      color: $white;
+    }
+  }
 }
 
 .heading {
