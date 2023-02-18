@@ -19,7 +19,7 @@ const config = [
                     id: 110,
                     icon: QidexIcon,
                     heading: 'QI DEX',
-                    text: 'First decentralized exchange on QI Blockchain network.',
+                    text: 'Decentralised exchange on Qi blockchain with an automated liquidity provision protocol for all tokens listed.',
                     new: 'New',
                     symbol: 'QIDEX',
                     appLink: 'https://qidex.site/',
@@ -37,11 +37,10 @@ const config = [
                     icon: QiStablecoinIcon,
                     heading: 'QI USD',
                     text: 'Over-Collateralized Decentralized Stablecoin.',
-                    new: '',
-                    symbol: '',
-                    appLink: '',
+                    new: 'New',
+                    symbol: 'QiUSD',
+                    appLink: 'https://qiusd.online/#/',
                     tag: '',
-                    soon: 'Coming Soon'
                 }
             ]
         },
@@ -117,11 +116,10 @@ const config = [
                     icon: DoodleIcon,
                     heading: 'Qie Doodle',
                     text: 'Play multiplayer doodle game on QI Blockchain.',
-                    new: '',
-                    symbol: '',
-                    appLink: '',
+                    new: 'New',
+                    symbol: 'DOQ',
+                    appLink: 'https://qiedoodle.com/',
                     tag: '',
-                    soon: 'Coming Soon'
                 },
                 {
                     id: 52,
@@ -184,16 +182,26 @@ const config = [
         },
         {
             id:8,
-            sectionName: 'Docs',
+            sectionName: 'Misc',
             sectionCards: [
                 {
                     id: 80,
                     icon: DocIcon,
                     heading: 'QI Blockchain Docs',
-                    text: 'Extensive information about QI Blockchain.',
+                    text: 'Extensive information about Qi Blockchain for developers to build in ecosystem.',
                     new: '',
                     symbol: '',
                     appLink: 'https://docs.qiblockchain.online/',
+                    tag: ''
+                },
+                {
+                    id: 81,
+                    icon: TokenCreatorIcon,
+                    heading: 'QI Blockchain Explorer',
+                    text: 'Track blocks and transactions. Analyze on-chain data such as tokens and smart-contracts.',
+                    new: '',
+                    symbol: '',
+                    appLink: 'https://mainnet.qiblockchain.online/',
                     tag: ''
                 }
             ]
