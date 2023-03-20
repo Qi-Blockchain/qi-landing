@@ -7,7 +7,7 @@ const NumbersBlock = () => {
     const [numChange, setNumChange] = useState();
 
     const getNum = () => {
-        fetch('https://solo.qi.mineradnow.space/api2/v1/token/QIE/rates?period=1h')
+        fetch('https://api.qie.systems/v1/landing/rates/1h')
             .then((response) => response.json())
             .then((data) => {
                 setNumChange(data.data.rates.rateChange)
