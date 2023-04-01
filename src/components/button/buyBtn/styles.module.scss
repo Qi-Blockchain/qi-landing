@@ -1,13 +1,13 @@
 @import './src/assets/styles/variables/colors';
 @import './src/assets/styles/mixin/breakpoints';
 
-@property --color-one{
+@property --color-one {
   syntax: '<color>';
   inherits: false;
   initial-value: #ff136d;
 }
 
-@property --color-two{
+@property --color-two {
   syntax: '<color>';
   inherits: false;
   initial-value: #453fd6;
@@ -25,12 +25,9 @@
   border-radius: 16px;
   box-shadow: -20px 10px 30px $blue-15, 20px -10px 30px $pink-15;
 
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // gap: 12px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     --color-one: #453fd6;

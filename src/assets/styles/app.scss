@@ -55,7 +55,7 @@ body {
   z-index: 1001;
 }
 
-.ReactModal__Content {
+.ReactModal__Content:not(.paymentModal) {
   background: #100F0F !important;
   border: 1px solid rgba(0, 0, 0, 0.15) !important;
   border-radius: 32px !important;
@@ -73,7 +73,7 @@ body {
     bottom: 200px !important;
     left: 20px !important;
     right: 20px !important;
-    padding: 100px 20px  !important;
+    padding: 100px 20px !important;
   }
 
   .react-player {
