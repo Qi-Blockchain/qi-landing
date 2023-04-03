@@ -53,6 +53,7 @@ const LiveChartSection = () => {
                                 contentLabel="Example Modal"
                                 style={paymentStyles}
                                 className='paymentModal'
+                                ariaHideApp={false}
                             >
                                 <div ref={ref} className={classes.payment}/>
                             </Modal>
