@@ -7,7 +7,7 @@ import {
     LineElement,
     Tooltip,
 } from 'chart.js';
-import { Line } from 'react-chartjs-2';
+import {Line} from 'react-chartjs-2';
 import classes from './styles.module.scss';
 import ratesApi from "../../../../../services/endpoints/rates";
 import {useRecoilValue} from "recoil";
@@ -76,50 +76,50 @@ const Chart = () => {
 
     const getRatesList = async () => {
         try {
-          const res = await ratesApi.getRates(periodValue);
+            const res = await ratesApi.getRates(periodValue);
 
-          const dataTemp = res.data.data.rates.rateData;
-          let ratesData = [];
-          let labelData = [];
+            const dataTemp = res.data.data.rates.rateData;
+            let ratesData = [];
+            let labelData = [];
 
-          dataTemp.forEach((elem, index) => {
-              if (index % perElement === 0) {
-                  ratesData.push(elem.rate);
-                  labelData.push(elem.created_at)
-              }
-          });
+            dataTemp.forEach((elem, index) => {
+                if (index % perElement === 0) {
+                    ratesData.push(elem.rate);
+                    labelData.push(elem.created_at)
+                }
+            });
 
 
-          // setChartData(ratesData);
-          // setChartLabelData(labelData);
+            // setChartData(ratesData);
+            // setChartLabelData(labelData);
 
-          setChartData({
-              labels: labelData,
-              datasets: [
-                  {
-                      data: ratesData,
-                      lineTension: 0.3,
-                      fill: true,
-                      borderColor: (context) => {
-                          const colorStart = '#3731B9';
-                          const colorEnd = '#FF136D';
-                          const ctx = context.chart.ctx;
-                          const area = context.chart.chartArea;
+            setChartData({
+                labels: labelData,
+                datasets: [
+                    {
+                        data: ratesData,
+                        lineTension: 0.3,
+                        fill: true,
+                        borderColor: (context) => {
+                            const colorStart = '#3731B9';
+                            const colorEnd = '#FF136D';
+                            const ctx = context.chart.ctx;
+                            const area = context.chart.chartArea;
 
-                          const gradient = ctx.createLinearGradient(area.left, 0, area.right, 0);
+                            const gradient = ctx.createLinearGradient(area.left, 0, area.right, 0);
 
-                          gradient.addColorStop(0, colorStart);
-                          gradient.addColorStop(1, colorEnd);
+                            gradient.addColorStop(0, colorStart);
+                            gradient.addColorStop(1, colorEnd);
 
-                          return gradient;
-                      },
-                      pointRadius: 0,
-                  }
-              ]
-          })
+                            return gradient;
+                        },
+                        pointRadius: 0,
+                    }
+                ]
+            })
         } catch (e) {
-          console.log(e)
-      }
+            console.log(e)
+        }
     }
 
     useEffect(() => {
@@ -141,12 +141,12 @@ const Chart = () => {
         },
         responsive: true,
         maintainAspectRatio: false,
-        plugins: {
-        }
+        plugins: {}
     };
 
     const setChartTickets = () => {
         const arr = [];
+
         const ticks = ref.current.scales.y.ticks;
         const ticksSorted = ticks.slice(-5).reverse();
 
@@ -169,12 +169,14 @@ const Chart = () => {
                     ))
                 }
             </div>
-            <Line
-                ref={ref}
-                data={chartData}
-                options={options}
-                updateMode={'none'}
-            />
+            <div className={classes.chartContainer}>
+                <Line
+                    ref={ref}
+                    data={chartData}
+                    options={options}
+                    updateMode={'none'}
+                />
+            </div>
         </div>
     );
 };

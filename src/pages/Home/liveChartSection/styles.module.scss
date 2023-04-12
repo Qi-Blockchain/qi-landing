@@ -121,5 +121,9 @@
 
     height: 80vh;
     overflow-y: scroll;
+
+    iframe {
+      width: 100vh !important;
+    }
   }
 }
