@@ -67,13 +67,13 @@ const config = [
                 {
                     id: 140,
                     icon: GalaxyIcon,
-                    heading: 'Galaxy Invest',
+                    heading: 'Galaxi Invest',
                     text: 'AI based autotrading global stocks.',
-                    new: '',
+                    new: 'New',
                     symbol: '',
-                    appLink: '',
+                    appLink: 'https://play.google.com/store/apps/details?id=com.galaxi.android&gl=US',
                     tag: '',
-                    soon: 'Coming Soon'
+                    soon: ''
                 }
             ]
         },
@@ -145,11 +145,10 @@ const config = [
                     icon: QiStablecoinIcon,
                     heading: 'QIE Wallet',
                     text: 'Send and receive QIE, tokens and NFTs from mobile app with web3 browser and many other features.',
-                    new: '',
+                    new: 'New',
                     symbol: '',
-                    appLink: '',
+                    appLink: 'https://qiewallet.qiblockchain.online/',
                     tag: '',
-                    soon: 'Coming Soon'
                 }
             ]
         },
